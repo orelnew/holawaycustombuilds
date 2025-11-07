@@ -142,7 +142,7 @@ const ChoosingRightFence = () => {
                       <Phone className="mr-2 h-5 w-5" />
                       Get Free Consultation
                     </Button>
-                    <Button size="lg" variant="outline" onClick={() => window.location.href = 'mailto:hillcountryrepairco@gmail.com'}>
+                    <Button size="lg" variant="outline" className="text-foreground hover:text-foreground" onClick={() => window.location.href = 'mailto:hillcountryrepairco@gmail.com'}>
                       <Mail className="mr-2 h-5 w-5" />
                       Email Us
                     </Button>
