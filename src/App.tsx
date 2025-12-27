@@ -21,6 +21,8 @@ import KitchenRemodelingBudget from "./pages/blog/KitchenRemodelingBudget";
 // Other Pages
 import ContactPage from "./pages/ContactPage";
 import OurApproach from "./pages/OurApproach";
+import LeadFunnel from "./pages/LeadFunnel";
+import RoofingLeadFunnel from "./pages/RoofingLeadFunnel";
 
 const queryClient = new QueryClient();
 
@@ -48,6 +50,8 @@ const App = () => (
           {/* Other Pages */}
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/our-approach" element={<OurApproach />} />
+          <Route path="/get-started" element={<LeadFunnel />} />
+          <Route path="/roofing-estimate" element={<RoofingLeadFunnel />} />
 
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
