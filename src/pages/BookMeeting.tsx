@@ -47,7 +47,7 @@ const BookMeeting = () => {
 
         <div className="pt-4 space-y-2">
           <p className="text-lg font-semibold text-gray-800">Want to skip the wait? Book your consultation directly:</p>
-          <div className="w-full rounded-xl overflow-hidden border border-gray-200 shadow-sm">
+          <div className="w-full md:w-[200%] md:-ml-[50%] rounded-xl overflow-hidden border border-gray-200 shadow-sm">
             <InlineWidget
               url="https://calendly.com/mark-agm/site-visit"
               styles={{ height: '660px', width: '100%', minHeight: '660px' }}
