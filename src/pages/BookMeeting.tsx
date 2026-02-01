@@ -16,7 +16,7 @@ const BookMeeting = () => {
             <div className="flex justify-center mb-6">
               <img
                 src={logo}
-                alt="Hill Country Repair Co."
+                alt="Holaway Custom Builds"
                 className="h-16 w-16 md:h-20 md:w-20"
               />
             </div>

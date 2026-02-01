@@ -517,6 +517,17 @@ const LeadFunnel = () => {
             />
           </div>
 
+          <div className="w-full space-y-3">
+            <p className="text-lg font-semibold text-gray-800 text-center">Some of our recent work:</p>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+              {clientImages.map((src, i) => (
+                <div key={i} className="aspect-square rounded-lg overflow-hidden border border-gray-200">
+                  <img src={src} alt={`Project photo ${i + 1}`} className="w-full h-full object-cover" />
+                </div>
+              ))}
+            </div>
+          </div>
+
           <Button
             onClick={() => setStarted(true)}
             size="lg"
@@ -648,11 +659,11 @@ const LeadFunnel = () => {
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
           <img
             src={logo}
-            alt="Hill Country Repair Co."
+            alt="Holaway Custom Builds"
             className="h-16 w-16 md:h-20 md:w-20 mb-4 animate-in fade-in zoom-in duration-500"
           />
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2 animate-in fade-in slide-in-from-bottom-4 duration-500 delay-100">
-            Hill Country Repair Co.
+            Holaway Custom Builds
           </h1>
           <p className="text-lg md:text-xl text-cream/90 max-w-2xl animate-in fade-in slide-in-from-bottom-4 duration-500 delay-200">
             Get Your Free Kitchen Remodeling Consultation — Let's Turn Your Vision Into Reality

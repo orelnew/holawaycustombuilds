@@ -23,9 +23,9 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
-            <img src={logo} alt="Hill Country Repair Co." className="h-12 w-12" />
+            <img src={logo} alt="Holaway Custom Builds" className="h-12 w-12" />
             <div className="hidden sm:block">
-              <h1 className="font-bold text-lg text-foreground">Hill Country Repair Co.</h1>
+              <h1 className="font-bold text-lg text-foreground">Holaway Custom Builds</h1>
             </div>
           </Link>
 

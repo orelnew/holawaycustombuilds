@@ -556,7 +556,7 @@ const RoofingLeadFunnel = () => {
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
           <img
             src={logo}
-            alt="Hill Country Repair Co."
+            alt="Holaway Custom Builds"
             className="h-16 w-16 md:h-20 md:w-20 mb-4 animate-in fade-in zoom-in duration-500"
           />
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2 animate-in fade-in slide-in-from-bottom-4 duration-500 delay-100">

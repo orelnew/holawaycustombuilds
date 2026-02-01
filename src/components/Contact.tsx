@@ -49,7 +49,7 @@ const Contact = () => {
           </div>
 
           <div className="bg-background/10 backdrop-blur-sm rounded-lg p-8 border border-primary/20 text-center">
-            <h3 className="text-2xl font-bold mb-4 text-cream">Why Choose Hill Country Repair Co.?</h3>
+            <h3 className="text-2xl font-bold mb-4 text-cream">Why Choose Holaway Custom Builds?</h3>
             <div className="grid md:grid-cols-3 gap-6 mb-6">
               <div>
                 <p className="text-3xl font-bold text-primary mb-2">15+</p>

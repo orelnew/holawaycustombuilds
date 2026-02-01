@@ -6,7 +6,7 @@ const reviews = [
     name: "Sarah Martinez",
     location: "Austin, TX",
     rating: 5,
-    review: "Hill Country Repair did an amazing job painting our home's exterior. The crew was professional, arrived on time every day, and the attention to detail was outstanding. Our house looks brand new!",
+    review: "Holaway Custom Builds did an amazing job painting our home's exterior. The crew was professional, arrived on time every day, and the attention to detail was outstanding. Our house looks brand new!",
     service: "Exterior Painting"
   },
   {
