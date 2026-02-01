@@ -1,78 +1,100 @@
 import { InlineWidget } from "react-calendly";
-import { Clock, CheckCircle } from "lucide-react";
+import { CheckCircle2, ExternalLink, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useNavigate } from "react-router-dom";
-import logo from "@/assets/logo-2.webp";
+import { useNavigate, useLocation } from "react-router-dom";
+
+const imageModules = import.meta.glob('../assets/client-images/*.{jpg,JPG,jpeg,png}', { eager: true, query: '?url', import: 'default' });
+const clientImages = Object.values(imageModules) as string[];
+
+interface LeadFormData {
+  name: string;
+  phone: string;
+  email: string;
+}
 
 const BookMeeting = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const formData = location.state?.formData as LeadFormData | undefined;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary/5 via-white to-primary/10">
-      <div className="container mx-auto px-4 py-8">
-        <div className="max-w-6xl mx-auto">
-          {/* Header */}
-          <div className="text-center mb-8">
-            <div className="flex justify-center mb-6">
-              <img
-                src={logo}
-                alt="Holaway Custom Builds"
-                className="h-16 w-16 md:h-20 md:w-20"
-              />
-            </div>
+    <div className="min-h-screen bg-gradient-to-br from-primary/5 via-white to-primary/10 flex items-center justify-center p-4">
+      <div className="max-w-2xl w-full text-center space-y-8 animate-in fade-in duration-500">
+        <div className="flex justify-center">
+          <div className="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center">
+            <CheckCircle2 className="w-16 h-16 text-green-600" />
+          </div>
+        </div>
 
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Let's Schedule Your Consultation
-            </h1>
-            <p className="text-lg text-gray-700 mb-6 max-w-xl mx-auto">
-              Thank you for your interest. Choose a time that works best for you.
-            </p>
-
-            {/* Quick Instructions */}
-            <div className="bg-white border border-gray-200 rounded-lg p-6 mb-6 max-w-3xl mx-auto shadow-sm">
-              <div className="flex items-center justify-center gap-2 text-sm text-gray-700 mb-4">
-                <Clock className="h-4 w-4 text-primary flex-shrink-0" />
-                <span>Block out 30 minutes for maximum value</span>
-              </div>
-              <p className="text-sm text-gray-600 text-center">
-                This call will help us understand your project needs and provide you with an accurate estimate.
+        <div className="space-y-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
+            Thank you{formData ? `, ${formData.name}` : ""}!
+          </h1>
+          <p className="text-xl text-gray-600">
+            We've received your information and one of our team members will be in touch to schedule your free kitchen remodeling consultation.
+          </p>
+          {formData && (
+            <div className="pt-4 space-y-2">
+              <p className="text-lg text-gray-700">
+                📞 We'll reach you at: <span className="font-semibold">{formData.phone}</span>
+              </p>
+              <p className="text-lg text-gray-700">
+                ✉️ Consultation details sent to: <span className="font-semibold">{formData.email}</span>
               </p>
             </div>
+          )}
+        </div>
 
-            {/* Simple CTA */}
-            <div className="text-center mb-2">
-              <h3 className="text-2xl font-bold text-gray-900">
-                Pick Your Perfect Time Below 👇
-              </h3>
-            </div>
-          </div>
-
-          {/* Calendly Widget - Full Width */}
-          <div className="w-full">
+        <div className="pt-4 space-y-2">
+          <p className="text-lg font-semibold text-gray-800">Want to skip the wait? Book your consultation directly:</p>
+          <div className="w-full rounded-xl overflow-hidden border border-gray-200 shadow-sm">
             <InlineWidget
-              url="https://calendly.com/windflowmedia/contractor-growth-followup-meeting-clone"
-              styles={{ height: '900px', width: '100%', minHeight: '900px' }}
+              url="https://calendly.com/mark-agm/site-visit"
+              styles={{ height: '660px', width: '100%', minHeight: '660px' }}
             />
           </div>
+        </div>
 
-          {/* Footer Message */}
-          <div className="text-center mt-6">
-            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-3">
-              <CheckCircle className="h-4 w-4" />
-              Your time is valuable to us
-            </div>
-            <p className="text-gray-600 max-w-xl mx-auto text-sm mb-6">
-              We're looking forward to helping you bring your project vision to life with quality craftsmanship and dedicated service.
-            </p>
-
-            <Button
-              onClick={() => navigate("/")}
-              variant="outline"
-              size="lg"
-            >
-              Return to Homepage
-            </Button>
+        <div className="pt-4 space-y-3">
+          <p className="text-lg font-semibold text-gray-800">Some of our recent work:</p>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+            {clientImages.map((src, i) => (
+              <div key={i} className="aspect-square rounded-lg overflow-hidden border border-gray-200">
+                <img src={src} alt={`Project photo ${i + 1}`} className="w-full h-full object-cover" />
+              </div>
+            ))}
           </div>
+        </div>
+
+        <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a
+            href="https://holawaycustombuilds.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors"
+          >
+            View our work
+            <ExternalLink className="w-4 h-4" />
+          </a>
+          <span className="text-gray-300 hidden sm:inline">|</span>
+          <a
+            href="https://www.instagram.com/holawaycustombuilds/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors"
+          >
+            <Instagram className="w-4 h-4" />
+            Instagram
+          </a>
+          <span className="text-gray-300 hidden sm:inline">|</span>
+          <Button
+            onClick={() => navigate("/")}
+            variant="outline"
+            size="lg"
+            className="text-lg px-8"
+          >
+            Return to Homepage
+          </Button>
         </div>
       </div>
     </div>
