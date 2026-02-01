@@ -39,6 +39,7 @@ const LeadFunnel = () => {
   const navigate = useNavigate();
   const [started, setStarted] = useState(false);
   const [currentStep, setCurrentStep] = useState(0);
+  const [exitFunnel, setExitFunnel] = useState(false);
   const [formData, setFormData] = useState<FormData>({
     name: "",
     phone: "",
@@ -64,6 +65,13 @@ const LeadFunnel = () => {
   const progress = ((currentStep + 1) / totalSteps) * 100;
 
   const handleNext = () => {
+    if (
+      (currentStep === 6 && formData.homeValue === "Under $350,000") ||
+      (currentStep === 8 && formData.budget === "Under $20,000")
+    ) {
+      setExitFunnel(true);
+      return;
+    }
     if (currentStep < totalSteps) {
       setCurrentStep(currentStep + 1);
       window.scrollTo(0, 0);
@@ -193,7 +201,7 @@ const LeadFunnel = () => {
                 <Input
                   id="city"
                   type="text"
-                  placeholder="Austin"
+                  placeholder="Fayetteville"
                   value={formData.city}
                   onChange={(e) => setFormData({ ...formData, city: e.target.value })}
                   className="text-lg py-6"
@@ -205,7 +213,7 @@ const LeadFunnel = () => {
                   <Input
                     id="state"
                     type="text"
-                    placeholder="Texas"
+                    placeholder="Arkansas"
                     value={formData.state}
                     onChange={(e) => setFormData({ ...formData, state: e.target.value })}
                     className="text-lg py-5"
@@ -538,6 +546,34 @@ const LeadFunnel = () => {
               ))}
             </div>
           </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (exitFunnel) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-primary/5 via-white to-primary/10 flex items-center justify-center p-4">
+        <div className="max-w-xl w-full text-center space-y-6 animate-in fade-in duration-500">
+          <div className="flex justify-center">
+            <div className="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center">
+              <CheckCircle2 className="w-16 h-16 text-green-600" />
+            </div>
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
+            Thank you, {formData.name}!
+          </h1>
+          <p className="text-xl text-gray-600">
+            Thank you for your interest. We'll review your information and get back to you soon.
+          </p>
+          <Button
+            onClick={() => navigate("/")}
+            variant="outline"
+            size="lg"
+            className="text-lg px-8"
+          >
+            Return to Homepage
+          </Button>
         </div>
       </div>
     );
