@@ -37,6 +37,7 @@ interface FormData {
 
 const LeadFunnel = () => {
   const navigate = useNavigate();
+  const [started, setStarted] = useState(false);
   const [currentStep, setCurrentStep] = useState(0);
   const [formData, setFormData] = useState<FormData>({
     name: "",
@@ -485,6 +486,48 @@ const LeadFunnel = () => {
         return null;
     }
   };
+
+  if (!started) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-primary/5 via-white to-primary/10 flex flex-col items-center justify-center p-4">
+        <div className="max-w-2xl w-full text-center space-y-8 animate-in fade-in duration-500">
+          <div className="flex flex-col items-center space-y-4">
+            <img
+              src={logo}
+              alt="Holaway Custom Builds"
+              className="h-28 w-28 md:h-36 md:w-36"
+            />
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
+              Holaway Custom Builds
+            </h1>
+            <p className="text-lg text-gray-600 max-w-lg">
+              See the quality and craftsmanship we bring to every kitchen remodel — then let's talk about yours.
+            </p>
+          </div>
+
+          <div className="w-full rounded-xl overflow-hidden border border-gray-200 shadow-sm">
+            <iframe
+              title="Holaway Custom Builds"
+              src="https://player.vimeo.com/video/1160786568"
+              className="w-full"
+              style={{ aspectRatio: '16/9' }}
+              frameBorder="0"
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+              allowFullScreen
+            />
+          </div>
+
+          <Button
+            onClick={() => setStarted(true)}
+            size="lg"
+            className="text-lg px-10 py-6 h-auto"
+          >
+            Get Started — It's Free
+          </Button>
+        </div>
+      </div>
+    );
+  }
 
   if (currentStep === totalSteps) {
     return (
