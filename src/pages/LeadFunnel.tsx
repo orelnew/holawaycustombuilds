@@ -505,29 +505,6 @@ const LeadFunnel = () => {
             </p>
           </div>
 
-          <div className="w-full rounded-xl overflow-hidden border border-gray-200 shadow-sm">
-            <iframe
-              title="Holaway Custom Builds"
-              src="https://player.vimeo.com/video/1160786568"
-              className="w-full"
-              style={{ aspectRatio: '16/9' }}
-              frameBorder="0"
-              allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-              allowFullScreen
-            />
-          </div>
-
-          <div className="w-full space-y-3">
-            <p className="text-lg font-semibold text-gray-800 text-center">Some of our recent work:</p>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-              {clientImages.map((src, i) => (
-                <div key={i} className="aspect-square rounded-lg overflow-hidden border border-gray-200">
-                  <img src={src} alt={`Project photo ${i + 1}`} className="w-full h-full object-cover" />
-                </div>
-              ))}
-            </div>
-          </div>
-
           <Button
             onClick={() => setStarted(true)}
             size="lg"
@@ -535,6 +512,32 @@ const LeadFunnel = () => {
           >
             Get Started — It's Free
           </Button>
+
+          <div className="w-full space-y-3">
+            <p className="text-lg font-semibold text-gray-800 text-center">Check out what our clients are saying about us:</p>
+            <div className="w-full rounded-xl overflow-hidden border border-gray-200 shadow-sm">
+              <iframe
+                title="Holaway Custom Builds"
+                src="https://player.vimeo.com/video/1160786568"
+                className="w-full"
+                style={{ aspectRatio: '16/9' }}
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                allowFullScreen
+              />
+            </div>
+          </div>
+
+          <div className="w-full space-y-3">
+            <p className="text-lg font-semibold text-gray-800 text-center">Meet the team:</p>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+              {clientImages.map((src, i) => (
+                <div key={i} className="aspect-square rounded-lg overflow-hidden border border-gray-200">
+                  <img src={src} alt={`Team photo ${i + 1}`} className="w-full h-full object-cover" />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     );
