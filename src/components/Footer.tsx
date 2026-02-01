@@ -1,5 +1,5 @@
-import logo from "@/assets/logo.png";
-import { Phone, Mail } from "lucide-react";
+import logo from "@/assets/logo-2.webp";
+import { Phone, Mail, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -36,6 +36,10 @@ const Footer = () => {
               <a href="mailto:hillcountryrepairco@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors break-all">
                 <Mail className="h-4 w-4" />
                 hillcountryrepairco@gmail.com
+              </a>
+              <a href="https://www.instagram.com/holawaycustombuilds/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">
+                <Instagram className="h-4 w-4" />
+                @holawaycustombuilds
               </a>
             </div>
           </div>

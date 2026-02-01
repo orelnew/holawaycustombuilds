@@ -8,7 +8,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Progress } from "@/components/ui/progress";
 import { ArrowLeft, ArrowRight, CheckCircle2 } from "lucide-react";
 import rooferImage from "@/assets/roofer_image.png";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-2.webp";
 
 interface FormData {
   name: string;

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/Austin.png";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-2.webp";
 import { Phone } from "lucide-react";
 
 const Hero = () => {

@@ -1,27 +1,38 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { InlineWidget } from "react-calendly";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { Checkbox } from "@/components/ui/checkbox";
+import { Textarea } from "@/components/ui/textarea";
 import { Progress } from "@/components/ui/progress";
-import { ArrowLeft, ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowLeft, ArrowRight, CheckCircle2, ExternalLink, Instagram } from "lucide-react";
 import remodelingImage from "@/assets/Gemini_Generated_Image_vv5efovv5efovv5e.png";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-2.webp";
+
+const imageModules = import.meta.glob('../assets/client-images/*.{jpg,JPG,jpeg,png}', { eager: true, query: '?url', import: 'default' });
+const clientImages = Object.values(imageModules) as string[];
 
 interface FormData {
   name: string;
   phone: string;
-  projectType: string[];
-  planningStage: string;
-  startTime: string;
+  email: string;
+  street: string;
+  city: string;
+  state: string;
+  zip: string;
+  homeBuilt: string;
+  homeOwnership: string;
+  homeValue: string;
+  propertyType: string;
   budget: string;
-  experience: string;
-  propertyAddress: string;
-  isOwner: string;
-  readyToMove: string;
-  bestTime: string;
+  kitchenVision: string;
+  remodelReason: string;
+  startTimeline: string;
+  paymentMethod: string;
+  decisionMakers: string;
+  otherEstimates: string;
 }
 
 const LeadFunnel = () => {
@@ -30,22 +41,29 @@ const LeadFunnel = () => {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     phone: "",
-    projectType: [],
-    planningStage: "",
-    startTime: "",
+    email: "",
+    street: "",
+    city: "",
+    state: "",
+    zip: "",
+    homeBuilt: "",
+    homeOwnership: "",
+    homeValue: "",
+    propertyType: "",
     budget: "",
-    experience: "",
-    propertyAddress: "",
-    isOwner: "",
-    readyToMove: "",
-    bestTime: "",
+    kitchenVision: "",
+    remodelReason: "",
+    startTimeline: "",
+    paymentMethod: "",
+    decisionMakers: "",
+    otherEstimates: "",
   });
 
-  const totalSteps = 11;
+  const totalSteps = 15;
   const progress = ((currentStep + 1) / totalSteps) * 100;
 
   const handleNext = () => {
-    if (currentStep < totalSteps - 1) {
+    if (currentStep < totalSteps) {
       setCurrentStep(currentStep + 1);
       window.scrollTo(0, 0);
     }
@@ -58,52 +76,37 @@ const LeadFunnel = () => {
     }
   };
 
-  const handleProjectTypeToggle = (value: string) => {
-    setFormData(prev => ({
-      ...prev,
-      projectType: prev.projectType.includes(value)
-        ? prev.projectType.filter(item => item !== value)
-        : [...prev.projectType, value]
-    }));
-  };
-
   const isStepValid = () => {
     switch (currentStep) {
-      case 0:
-        return formData.name.trim() !== "";
-      case 1:
-        return formData.projectType.length > 0;
-      case 2:
-        return formData.planningStage !== "";
-      case 3:
-        return formData.startTime !== "";
-      case 4:
-        return formData.budget !== "";
-      case 5:
-        return formData.experience !== "";
-      case 6:
-        return formData.propertyAddress.trim() !== "";
-      case 7:
-        return formData.isOwner !== "";
-      case 8:
-        return formData.readyToMove !== "";
-      case 9:
-        return formData.phone.trim() !== "";
-      case 10:
-        return formData.bestTime !== "";
-      default:
-        return true;
+      case 0: return formData.name.trim() !== "";
+      case 1: return formData.phone.trim() !== "";
+      case 2: return formData.email.trim() !== "";
+      case 3: return formData.street.trim() !== "" && formData.city.trim() !== "" && formData.state.trim() !== "" && formData.zip.trim() !== "";
+      case 4: return formData.homeBuilt !== "";
+      case 5: return formData.homeOwnership !== "";
+      case 6: return formData.homeValue !== "";
+      case 7: return formData.propertyType !== "";
+      case 8: return formData.budget !== "";
+      case 9: return formData.kitchenVision.trim() !== "";
+      case 10: return formData.remodelReason !== "";
+      case 11: return formData.startTimeline !== "";
+      case 12: return formData.paymentMethod !== "";
+      case 13: return formData.decisionMakers !== "";
+      case 14: return formData.otherEstimates !== "";
+      default: return true;
     }
   };
 
   const renderStep = () => {
     switch (currentStep) {
+      // --- Contact Information ---
+
       case 0:
         return (
           <div className="space-y-6">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold text-gray-900">Let's get started!</h2>
-              <p className="text-gray-600">What's your name?</p>
+              <p className="text-gray-600">What's your full name?</p>
             </div>
             <div className="space-y-2">
               <Label htmlFor="name">Full Name</Label>
@@ -125,23 +128,19 @@ const LeadFunnel = () => {
           <div className="space-y-6">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold text-gray-900">Great, {formData.name}!</h2>
-              <p className="text-gray-600">What type of project are you looking to do?</p>
-              <p className="text-sm text-gray-500">Select all that apply</p>
+              <p className="text-gray-600">What's the best phone number to reach you?</p>
             </div>
-            <div className="space-y-3">
-              {["Kitchen Remodel", "Bathroom Remodel", "Full Home Remodel", "Room Addition", "Deck/Patio", "Fencing", "Painting", "Other"].map((option) => (
-                <div key={option} className="flex items-center space-x-3 p-4 border rounded-lg hover:border-primary cursor-pointer transition-colors"
-                  onClick={() => handleProjectTypeToggle(option)}>
-                  <Checkbox
-                    id={option}
-                    checked={formData.projectType.includes(option)}
-                    onCheckedChange={() => handleProjectTypeToggle(option)}
-                  />
-                  <Label htmlFor={option} className="flex-1 cursor-pointer text-base">
-                    {option}
-                  </Label>
-                </div>
-              ))}
+            <div className="space-y-2">
+              <Label htmlFor="phone">Phone Number</Label>
+              <Input
+                id="phone"
+                type="tel"
+                placeholder="(555) 123-4567"
+                value={formData.phone}
+                onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                className="text-lg py-6"
+                autoFocus
+              />
             </div>
           </div>
         );
@@ -150,24 +149,21 @@ const LeadFunnel = () => {
         return (
           <div className="space-y-6">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold text-gray-900">Perfect!</h2>
-              <p className="text-gray-600">Have you already started planning, or are you in the early idea stage?</p>
+              <h2 className="text-3xl font-bold text-gray-900">Almost there with your info!</h2>
+              <p className="text-gray-600">What's the best email to send your consultation details?</p>
             </div>
-            <RadioGroup value={formData.planningStage} onValueChange={(value) => setFormData({ ...formData, planningStage: value })}>
-              {[
-                "Just exploring ideas",
-                "Have a rough plan",
-                "Detailed plans ready",
-                "Ready to start immediately"
-              ].map((option) => (
-                <div key={option} className="flex items-center space-x-3 p-4 border rounded-lg hover:border-primary cursor-pointer transition-colors">
-                  <RadioGroupItem value={option} id={option} />
-                  <Label htmlFor={option} className="flex-1 cursor-pointer text-base">
-                    {option}
-                  </Label>
-                </div>
-              ))}
-            </RadioGroup>
+            <div className="space-y-2">
+              <Label htmlFor="email">Email Address</Label>
+              <Input
+                id="email"
+                type="email"
+                placeholder="john@example.com"
+                value={formData.email}
+                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                className="text-lg py-6"
+                autoFocus
+              />
+            </div>
           </div>
         );
 
@@ -175,48 +171,75 @@ const LeadFunnel = () => {
         return (
           <div className="space-y-6">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold text-gray-900">When would you like the project to start?</h2>
+              <h2 className="text-3xl font-bold text-gray-900">Property Address</h2>
+              <p className="text-gray-600">What's the address of the property you're looking to remodel?</p>
             </div>
-            <RadioGroup value={formData.startTime} onValueChange={(value) => setFormData({ ...formData, startTime: value })}>
-              {[
-                "As soon as possible",
-                "Within 1-2 months",
-                "Within 3-6 months",
-                "More than 6 months",
-                "Just planning for now"
-              ].map((option) => (
-                <div key={option} className="flex items-center space-x-3 p-4 border rounded-lg hover:border-primary cursor-pointer transition-colors">
-                  <RadioGroupItem value={option} id={option} />
-                  <Label htmlFor={option} className="flex-1 cursor-pointer text-base">
-                    {option}
-                  </Label>
+            <div className="space-y-4">
+              <div className="space-y-2">
+                <Label htmlFor="street">Street Address</Label>
+                <Input
+                  id="street"
+                  type="text"
+                  placeholder="123 Main Street"
+                  value={formData.street}
+                  onChange={(e) => setFormData({ ...formData, street: e.target.value })}
+                  className="text-lg py-6"
+                  autoFocus
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="city">City</Label>
+                <Input
+                  id="city"
+                  type="text"
+                  placeholder="Austin"
+                  value={formData.city}
+                  onChange={(e) => setFormData({ ...formData, city: e.target.value })}
+                  className="text-lg py-6"
+                />
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <Label htmlFor="state">State</Label>
+                  <Input
+                    id="state"
+                    type="text"
+                    placeholder="Texas"
+                    value={formData.state}
+                    onChange={(e) => setFormData({ ...formData, state: e.target.value })}
+                    className="text-lg py-5"
+                  />
                 </div>
-              ))}
-            </RadioGroup>
+                <div className="space-y-2">
+                  <Label htmlFor="zip">Zip Code</Label>
+                  <Input
+                    id="zip"
+                    type="text"
+                    placeholder="78701"
+                    value={formData.zip}
+                    onChange={(e) => setFormData({ ...formData, zip: e.target.value })}
+                    className="text-lg py-5"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         );
+
+      // --- Property & Homeowner Profile ---
 
       case 4:
         return (
           <div className="space-y-6">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold text-gray-900">Do you have a budget range in mind?</h2>
-              <p className="text-gray-600">This helps us provide the most relevant options</p>
+              <h2 className="text-3xl font-bold text-gray-900">About Your Home</h2>
+              <p className="text-gray-600">When was your home built?</p>
             </div>
-            <RadioGroup value={formData.budget} onValueChange={(value) => setFormData({ ...formData, budget: value })}>
-              {[
-                "Under $10,000",
-                "$10,000 - $25,000",
-                "$25,000 - $50,000",
-                "$50,000 - $100,000",
-                "Over $100,000",
-                "Not sure yet"
-              ].map((option) => (
+            <RadioGroup value={formData.homeBuilt} onValueChange={(value) => setFormData({ ...formData, homeBuilt: value })}>
+              {["Before 1980", "1980–1999", "2000–2010", "2011 or newer"].map((option) => (
                 <div key={option} className="flex items-center space-x-3 p-4 border rounded-lg hover:border-primary cursor-pointer transition-colors">
-                  <RadioGroupItem value={option} id={option} />
-                  <Label htmlFor={option} className="flex-1 cursor-pointer text-base">
-                    {option}
-                  </Label>
+                  <RadioGroupItem value={option} id={`homeBuilt-${option}`} />
+                  <Label htmlFor={`homeBuilt-${option}`} className="flex-1 cursor-pointer text-base">{option}</Label>
                 </div>
               ))}
             </RadioGroup>
@@ -227,19 +250,18 @@ const LeadFunnel = () => {
         return (
           <div className="space-y-6">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold text-gray-900">Have you done similar projects before?</h2>
+              <h2 className="text-3xl font-bold text-gray-900">How long have you owned this home?</h2>
             </div>
-            <RadioGroup value={formData.experience} onValueChange={(value) => setFormData({ ...formData, experience: value })}>
+            <RadioGroup value={formData.homeOwnership} onValueChange={(value) => setFormData({ ...formData, homeOwnership: value })}>
               {[
-                "Yes, multiple times",
-                "Yes, once or twice",
-                "No, this is my first time"
+                "Less than 1 year (just purchased)",
+                "1–5 years",
+                "5–15 years",
+                "More than 15 years"
               ].map((option) => (
                 <div key={option} className="flex items-center space-x-3 p-4 border rounded-lg hover:border-primary cursor-pointer transition-colors">
-                  <RadioGroupItem value={option} id={option} />
-                  <Label htmlFor={option} className="flex-1 cursor-pointer text-base">
-                    {option}
-                  </Label>
+                  <RadioGroupItem value={option} id={`ownership-${option}`} />
+                  <Label htmlFor={`ownership-${option}`} className="flex-1 cursor-pointer text-base">{option}</Label>
                 </div>
               ))}
             </RadioGroup>
@@ -250,21 +272,22 @@ const LeadFunnel = () => {
         return (
           <div className="space-y-6">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold text-gray-900">What is the property address?</h2>
-              <p className="text-gray-600">This helps us confirm we service your area</p>
+              <h2 className="text-3xl font-bold text-gray-900">What's your home's approximate current value?</h2>
             </div>
-            <div className="space-y-2">
-              <Label htmlFor="address">Property Address</Label>
-              <Input
-                id="address"
-                type="text"
-                placeholder="123 Main St, Austin, TX 78701"
-                value={formData.propertyAddress}
-                onChange={(e) => setFormData({ ...formData, propertyAddress: e.target.value })}
-                className="text-lg py-6"
-                autoFocus
-              />
-            </div>
+            <RadioGroup value={formData.homeValue} onValueChange={(value) => setFormData({ ...formData, homeValue: value })}>
+              {[
+                "Under $350,000",
+                "$350,000–$500,000",
+                "$500,000–$750,000",
+                "$750,000–$1,000,000",
+                "Over $1,000,000"
+              ].map((option) => (
+                <div key={option} className="flex items-center space-x-3 p-4 border rounded-lg hover:border-primary cursor-pointer transition-colors">
+                  <RadioGroupItem value={option} id={`value-${option}`} />
+                  <Label htmlFor={`value-${option}`} className="flex-1 cursor-pointer text-base">{option}</Label>
+                </div>
+              ))}
+            </RadioGroup>
           </div>
         );
 
@@ -272,44 +295,45 @@ const LeadFunnel = () => {
         return (
           <div className="space-y-6">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold text-gray-900">Are you the property owner?</h2>
+              <h2 className="text-3xl font-bold text-gray-900">What type of property is this?</h2>
             </div>
-            <RadioGroup value={formData.isOwner} onValueChange={(value) => setFormData({ ...formData, isOwner: value })}>
+            <RadioGroup value={formData.propertyType} onValueChange={(value) => setFormData({ ...formData, propertyType: value })}>
               {[
-                "Yes, I own the property",
-                "No, I'm a tenant",
-                "I'm acting on behalf of the owner"
+                "Single-family home",
+                "Townhome/Condo",
+                "Multi-family property",
+                "Other"
               ].map((option) => (
                 <div key={option} className="flex items-center space-x-3 p-4 border rounded-lg hover:border-primary cursor-pointer transition-colors">
-                  <RadioGroupItem value={option} id={option} />
-                  <Label htmlFor={option} className="flex-1 cursor-pointer text-base">
-                    {option}
-                  </Label>
+                  <RadioGroupItem value={option} id={`propType-${option}`} />
+                  <Label htmlFor={`propType-${option}`} className="flex-1 cursor-pointer text-base">{option}</Label>
                 </div>
               ))}
             </RadioGroup>
           </div>
         );
 
+      // --- Project Details ---
+
       case 8:
         return (
           <div className="space-y-6">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold text-gray-900">If you find the right contractor and the pricing makes sense...</h2>
-              <p className="text-gray-600">Are you ready to move forward?</p>
+              <h2 className="text-3xl font-bold text-gray-900">Project Budget</h2>
+              <p className="text-gray-600">What's your budget range for this kitchen remodeling project?</p>
             </div>
-            <RadioGroup value={formData.readyToMove} onValueChange={(value) => setFormData({ ...formData, readyToMove: value })}>
+            <RadioGroup value={formData.budget} onValueChange={(value) => setFormData({ ...formData, budget: value })}>
               {[
-                "Yes, ready to get started",
-                "Probably, need to review details",
-                "Still comparing options",
-                "Just gathering information"
+                "Under $20,000",
+                "$20,000–$40,000",
+                "$40,000–$75,000",
+                "$75,000–$125,000",
+                "$125,000–$200,000",
+                "Over $200,000"
               ].map((option) => (
                 <div key={option} className="flex items-center space-x-3 p-4 border rounded-lg hover:border-primary cursor-pointer transition-colors">
-                  <RadioGroupItem value={option} id={option} />
-                  <Label htmlFor={option} className="flex-1 cursor-pointer text-base">
-                    {option}
-                  </Label>
+                  <RadioGroupItem value={option} id={`budget-${option}`} />
+                  <Label htmlFor={`budget-${option}`} className="flex-1 cursor-pointer text-base">{option}</Label>
                 </div>
               ))}
             </RadioGroup>
@@ -320,19 +344,23 @@ const LeadFunnel = () => {
         return (
           <div className="space-y-6">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold text-gray-900">What's the best phone number to reach you?</h2>
+              <h2 className="text-3xl font-bold text-gray-900">Your Kitchen Vision</h2>
+              <p className="text-gray-600">Tell us about your kitchen remodeling vision — what are you hoping to accomplish and why now?</p>
             </div>
             <div className="space-y-2">
-              <Label htmlFor="phone">Phone Number</Label>
-              <Input
-                id="phone"
-                type="tel"
-                placeholder="(512) 555-0123"
-                value={formData.phone}
-                onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                className="text-lg py-6"
+              <Textarea
+                id="vision"
+                placeholder="For example: updating an outdated layout, creating an open concept, adding an island, improving functionality, etc."
+                value={formData.kitchenVision}
+                onChange={(e) => {
+                  if (e.target.value.length <= 500) {
+                    setFormData({ ...formData, kitchenVision: e.target.value });
+                  }
+                }}
+                className="text-base min-h-[120px]"
                 autoFocus
               />
+              <p className="text-sm text-gray-500 text-right">{formData.kitchenVision.length}/500 characters</p>
             </div>
           </div>
         );
@@ -341,20 +369,112 @@ const LeadFunnel = () => {
         return (
           <div className="space-y-6">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold text-gray-900">What's the best time to call?</h2>
+              <h2 className="text-3xl font-bold text-gray-900">Why are you considering this remodel?</h2>
+              <p className="text-gray-600">Which best describes your situation?</p>
             </div>
-            <RadioGroup value={formData.bestTime} onValueChange={(value) => setFormData({ ...formData, bestTime: value })}>
+            <RadioGroup value={formData.remodelReason} onValueChange={(value) => setFormData({ ...formData, remodelReason: value })}>
               {[
-                "Morning (8am - 12pm)",
-                "Afternoon (12pm - 5pm)",
-                "Evening (5pm - 8pm)",
-                "Anytime"
+                "We want to improve our kitchen's look, feel, or functionality",
+                "We need to fix damage or a structural problem",
+                "We're preparing to sell our home",
+                "Other"
               ].map((option) => (
                 <div key={option} className="flex items-center space-x-3 p-4 border rounded-lg hover:border-primary cursor-pointer transition-colors">
-                  <RadioGroupItem value={option} id={option} />
-                  <Label htmlFor={option} className="flex-1 cursor-pointer text-base">
-                    {option}
-                  </Label>
+                  <RadioGroupItem value={option} id={`reason-${option}`} />
+                  <Label htmlFor={`reason-${option}`} className="flex-1 cursor-pointer text-base">{option}</Label>
+                </div>
+              ))}
+            </RadioGroup>
+          </div>
+        );
+
+      case 11:
+        return (
+          <div className="space-y-6">
+            <div className="space-y-2">
+              <h2 className="text-3xl font-bold text-gray-900">When are you hoping to start this project?</h2>
+            </div>
+            <RadioGroup value={formData.startTimeline} onValueChange={(value) => setFormData({ ...formData, startTimeline: value })}>
+              {[
+                "Ready to start within 1–2 months",
+                "3–6 months",
+                "6–12 months",
+                "Just exploring my options for now"
+              ].map((option) => (
+                <div key={option} className="flex items-center space-x-3 p-4 border rounded-lg hover:border-primary cursor-pointer transition-colors">
+                  <RadioGroupItem value={option} id={`timeline-${option}`} />
+                  <Label htmlFor={`timeline-${option}`} className="flex-1 cursor-pointer text-base">{option}</Label>
+                </div>
+              ))}
+            </RadioGroup>
+          </div>
+        );
+
+      case 12:
+        return (
+          <div className="space-y-6">
+            <div className="space-y-2">
+              <h2 className="text-3xl font-bold text-gray-900">How are you planning to pay for this kitchen remodel?</h2>
+            </div>
+            <RadioGroup value={formData.paymentMethod} onValueChange={(value) => setFormData({ ...formData, paymentMethod: value })}>
+              {[
+                "Cash or savings",
+                "Home equity line of credit (HELOC)",
+                "Personal loan or financing",
+                "Insurance claim only",
+                "Insurance claim plus additional funds from savings/HELOC",
+                "Still exploring my financing options"
+              ].map((option) => (
+                <div key={option} className="flex items-center space-x-3 p-4 border rounded-lg hover:border-primary cursor-pointer transition-colors">
+                  <RadioGroupItem value={option} id={`payment-${option}`} />
+                  <Label htmlFor={`payment-${option}`} className="flex-1 cursor-pointer text-base">{option}</Label>
+                </div>
+              ))}
+            </RadioGroup>
+          </div>
+        );
+
+      // --- Decision-Making Process ---
+
+      case 13:
+        return (
+          <div className="space-y-6">
+            <div className="space-y-2">
+              <h2 className="text-3xl font-bold text-gray-900">Decision-Making</h2>
+              <p className="text-gray-600">Will all household decision-makers be available to attend the initial consultation?</p>
+            </div>
+            <RadioGroup value={formData.decisionMakers} onValueChange={(value) => setFormData({ ...formData, decisionMakers: value })}>
+              {[
+                "Yes, everyone who needs to approve this project will be there",
+                "No, only one of us can attend",
+                "Not sure yet"
+              ].map((option) => (
+                <div key={option} className="flex items-center space-x-3 p-4 border rounded-lg hover:border-primary cursor-pointer transition-colors">
+                  <RadioGroupItem value={option} id={`decision-${option}`} />
+                  <Label htmlFor={`decision-${option}`} className="flex-1 cursor-pointer text-base">{option}</Label>
+                </div>
+              ))}
+            </RadioGroup>
+          </div>
+        );
+
+      case 14:
+        return (
+          <div className="space-y-6">
+            <div className="space-y-2">
+              <h2 className="text-3xl font-bold text-gray-900">Almost done!</h2>
+              <p className="text-gray-600">Are you planning to get estimates from other contractors?</p>
+            </div>
+            <RadioGroup value={formData.otherEstimates} onValueChange={(value) => setFormData({ ...formData, otherEstimates: value })}>
+              {[
+                "No, I'm just looking for the right contractor who's a good fit",
+                "Yes, I'm comparing 2–3 contractors to find the best value",
+                "Yes, I'm getting multiple bids to find the lowest price",
+                "Haven't decided yet"
+              ].map((option) => (
+                <div key={option} className="flex items-center space-x-3 p-4 border rounded-lg hover:border-primary cursor-pointer transition-colors">
+                  <RadioGroupItem value={option} id={`estimates-${option}`} />
+                  <Label htmlFor={`estimates-${option}`} className="flex-1 cursor-pointer text-base">{option}</Label>
                 </div>
               ))}
             </RadioGroup>
@@ -381,39 +501,68 @@ const LeadFunnel = () => {
               Thank you, {formData.name}!
             </h1>
             <p className="text-xl text-gray-600">
-              We've received your information and one of our representatives will call you soon.
+              We've received your information and one of our team members will be in touch to schedule your free kitchen remodeling consultation.
             </p>
             <div className="pt-4 space-y-2">
               <p className="text-lg text-gray-700">
-                📞 Expect a call at: <span className="font-semibold">{formData.phone}</span>
+                📞 We'll reach you at: <span className="font-semibold">{formData.phone}</span>
               </p>
-              <p className="text-gray-600">
-                Best time to reach you: <span className="font-semibold">{formData.bestTime}</span>
+              <p className="text-lg text-gray-700">
+                ✉️ Consultation details sent to: <span className="font-semibold">{formData.email}</span>
               </p>
             </div>
           </div>
 
-          <div className="pt-8 space-y-4">
-            <p className="text-gray-600 mb-6">
-              Want to discuss your project sooner? Book a meeting with us now!
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                onClick={() => navigate("/book-meeting")}
-                size="lg"
-                className="text-lg px-8"
-              >
-                Book a Meeting
-              </Button>
-              <Button
-                onClick={() => navigate("/")}
-                variant="outline"
-                size="lg"
-                className="text-lg px-8"
-              >
-                Return to Homepage
-              </Button>
+          <div className="pt-4 space-y-2">
+            <p className="text-lg font-semibold text-gray-800">Want to skip the wait? Book your consultation directly:</p>
+            <div className="w-full rounded-xl overflow-hidden border border-gray-200 shadow-sm">
+              <InlineWidget
+                url="https://calendly.com/mark-agm/site-visit"
+                styles={{ height: '660px', width: '100%', minHeight: '660px' }}
+              />
             </div>
+          </div>
+
+          <div className="pt-4 space-y-3">
+            <p className="text-lg font-semibold text-gray-800">Some of our recent work:</p>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+              {clientImages.map((src, i) => (
+                <div key={i} className="aspect-square rounded-lg overflow-hidden border border-gray-200">
+                  <img src={src} alt={`Project photo ${i + 1}`} className="w-full h-full object-cover" />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="https://holawaycustombuilds.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors"
+            >
+              View our work
+              <ExternalLink className="w-4 h-4" />
+            </a>
+            <span className="text-gray-300 hidden sm:inline">|</span>
+            <a
+              href="https://www.instagram.com/holawaycustombuilds/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors"
+            >
+              <Instagram className="w-4 h-4" />
+              Instagram
+            </a>
+            <span className="text-gray-300 hidden sm:inline">|</span>
+            <Button
+              onClick={() => navigate("/")}
+              variant="outline"
+              size="lg"
+              className="text-lg px-8"
+            >
+              Return to Homepage
+            </Button>
           </div>
         </div>
       </div>
@@ -463,7 +612,7 @@ const LeadFunnel = () => {
             Hill Country Repair Co.
           </h1>
           <p className="text-lg md:text-xl text-cream/90 max-w-2xl animate-in fade-in slide-in-from-bottom-4 duration-500 delay-200">
-            Get Your Free Project Estimate - Let's Turn Your Vision Into Reality
+            Get Your Free Kitchen Remodeling Consultation — Let's Turn Your Vision Into Reality
           </p>
         </div>
       </div>
