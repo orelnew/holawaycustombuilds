@@ -508,7 +508,7 @@ const LeadFunnel = () => {
               Holaway Custom Builds
             </h1>
             <p className="text-lg text-gray-600 max-w-lg">
-              See the quality and craftsmanship we bring to every kitchen remodel — then let's talk about yours.
+              Your dream kitchen is waiting — let's bring your vision to life.
             </p>
           </div>
 
@@ -517,7 +517,7 @@ const LeadFunnel = () => {
             size="lg"
             className="text-lg px-10 py-6 h-auto"
           >
-            Get Started — It's Free
+            Begin Your Custom Kitchen Journey
           </Button>
 
           <div className="w-full space-y-3">
@@ -626,7 +626,7 @@ const LeadFunnel = () => {
             Holaway Custom Builds
           </h1>
           <p className="text-lg md:text-xl text-cream/90 max-w-2xl animate-in fade-in slide-in-from-bottom-4 duration-500 delay-200">
-            Get Your Free Kitchen Remodeling Consultation — Let's Turn Your Vision Into Reality
+            Get Your Kitchen Remodeling Consultation — Let's Turn Your Vision Into Reality
           </p>
         </div>
       </div>
