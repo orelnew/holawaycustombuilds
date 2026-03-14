@@ -175,7 +175,7 @@ const AboutUs = () => {
                     Sheridan, WY 82801
                   </p>
                   <p className="text-muted-foreground text-sm mt-4">
-                    Email: support@homeproconnectarkansas.com
+                    Email: orelnew@gmail.com
                   </p>
                 </CardContent>
               </Card>

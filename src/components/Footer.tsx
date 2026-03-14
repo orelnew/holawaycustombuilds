@@ -43,9 +43,9 @@ const Footer = () => {
                 <Phone className="h-4 w-4" />
                 479-364-6865
               </a>
-              <a href="mailto:support@homeproconnectarkansas.com" className="flex items-center gap-2 hover:text-primary transition-colors break-all">
+              <a href="mailto:orelnew@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors break-all">
                 <Mail className="h-4 w-4" />
-                support@homeproconnectarkansas.com
+                orelnew@gmail.com
               </a>
             </div>
           </div>

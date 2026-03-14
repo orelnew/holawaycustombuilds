@@ -67,10 +67,10 @@ const ContactPage = () => {
                           Send us an email and we'll get back to you within 24 hours.
                         </p>
                         <a
-                          href="mailto:support@homeproconnectarkansas.com"
+                          href="mailto:orelnew@gmail.com"
                           className="text-lg font-semibold text-primary hover:text-primary/80 transition-colors block break-all"
                         >
-                          support@homeproconnectarkansas.com
+                          orelnew@gmail.com
                         </a>
                         <p className="text-sm text-muted-foreground mt-2">
                           We respond to all inquiries promptly
@@ -197,7 +197,7 @@ const ContactPage = () => {
                   size="lg"
                   variant="outline"
                   className="border-2 border-cream text-cream hover:bg-cream hover:text-navy"
-                  onClick={() => window.location.href = 'mailto:support@homeproconnectarkansas.com'}
+                  onClick={() => window.location.href = 'mailto:orelnew@gmail.com'}
                 >
                   <Mail className="mr-2 h-5 w-5" />
                   Email Us

@@ -214,7 +214,7 @@ const OurApproach = () => {
                   size="lg"
                   variant="outline"
                   className="border-2 border-cream text-cream hover:bg-cream hover:text-navy"
-                  onClick={() => window.location.href = 'mailto:support@homeproconnectarkansas.com'}
+                  onClick={() => window.location.href = 'mailto:orelnew@gmail.com'}
                 >
                   <Mail className="mr-2 h-5 w-5" />
                   Email Us

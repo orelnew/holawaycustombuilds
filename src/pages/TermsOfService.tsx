@@ -99,7 +99,7 @@ const TermsOfService = () => {
                     Reply <strong>HELP</strong> to any message for assistance, or contact us:
                   </p>
                   <ul className="list-none pl-6 space-y-1 text-muted-foreground mt-2">
-                    <li><strong>Email:</strong> support@homeproconnectarkansas.com</li>
+                    <li><strong>Email:</strong> orelnew@gmail.com</li>
                     <li><strong>Phone:</strong> +1 (516) 288-9893</li>
                   </ul>
 
@@ -227,7 +227,7 @@ const TermsOfService = () => {
                     United States
                   </p>
                   <p className="text-muted-foreground leading-relaxed mt-3">
-                    <strong>Email:</strong> support@homeproconnectarkansas.com<br />
+                    <strong>Email:</strong> orelnew@gmail.com<br />
                     <strong>Phone:</strong> +1 (516) 288-9893
                   </p>
                 </div>
