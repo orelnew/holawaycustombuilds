@@ -1,5 +1,5 @@
 import { InlineWidget } from "react-calendly";
-import { CheckCircle2, ExternalLink, Instagram } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate, useLocation } from "react-router-dom";
 
@@ -67,25 +67,19 @@ const BookMeeting = () => {
         </div>
 
         <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a
-            href="https://holawaycustombuilds.com/"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/gallery"
             className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors"
           >
-            View our work
-            <ExternalLink className="w-4 h-4" />
-          </a>
+            View Our Gallery
+          </Link>
           <span className="text-gray-300 hidden sm:inline">|</span>
-          <a
-            href="https://www.instagram.com/holawaycustombuilds/"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/how-it-works"
             className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors"
           >
-            <Instagram className="w-4 h-4" />
-            Instagram
-          </a>
+            How It Works
+          </Link>
           <span className="text-gray-300 hidden sm:inline">|</span>
           <Button
             onClick={() => navigate("/")}

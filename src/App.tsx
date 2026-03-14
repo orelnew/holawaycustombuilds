@@ -17,6 +17,13 @@ import Construction from "./pages/services/Construction";
 import PaintColors2025 from "./pages/blog/PaintColors2025";
 import ChoosingRightFence from "./pages/blog/ChoosingRightFence";
 import KitchenRemodelingBudget from "./pages/blog/KitchenRemodelingBudget";
+import ArkansasWeatherMaintenance from "./pages/blog/ArkansasWeatherMaintenance";
+import ArkansasExteriorColors from "./pages/blog/ArkansasExteriorColors";
+import ArkansasFencingRegulations from "./pages/blog/ArkansasFencingRegulations";
+import NWAKitchenTrends from "./pages/blog/NWAKitchenTrends";
+import ArkansasHomePrep from "./pages/blog/ArkansasHomePrep";
+import ArkansasEnergyEfficiency from "./pages/blog/ArkansasEnergyEfficiency";
+import ArkansasHistoricHomes from "./pages/blog/ArkansasHistoricHomes";
 
 // Other Pages
 import ContactPage from "./pages/ContactPage";
@@ -61,6 +68,13 @@ const App = () => (
           <Route path="/blog/paint-colors-2025" element={<PaintColors2025 />} />
           <Route path="/blog/choosing-right-fence" element={<ChoosingRightFence />} />
           <Route path="/blog/kitchen-remodeling-budget" element={<KitchenRemodelingBudget />} />
+          <Route path="/blog/arkansas-weather-maintenance" element={<ArkansasWeatherMaintenance />} />
+          <Route path="/blog/arkansas-exterior-colors" element={<ArkansasExteriorColors />} />
+          <Route path="/blog/arkansas-fencing-regulations" element={<ArkansasFencingRegulations />} />
+          <Route path="/blog/nwa-kitchen-trends" element={<NWAKitchenTrends />} />
+          <Route path="/blog/arkansas-home-prep" element={<ArkansasHomePrep />} />
+          <Route path="/blog/arkansas-energy-efficiency" element={<ArkansasEnergyEfficiency />} />
+          <Route path="/blog/arkansas-historic-homes" element={<ArkansasHistoricHomes />} />
 
           {/* Other Pages */}
           <Route path="/contact" element={<ContactPage />} />
