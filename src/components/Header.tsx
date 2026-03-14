@@ -46,9 +46,6 @@ const Header = () => {
                 <Link to="/terms-of-service" className="block px-4 py-2 text-sm text-foreground hover:bg-muted">
                   Terms of Service
                 </Link>
-                <Link to="/sms-opt-in" className="block px-4 py-2 text-sm text-foreground hover:bg-muted">
-                  SMS Opt-In
-                </Link>
               </div>
             </div>
             <Link to="/sms-opt-in">
@@ -96,9 +93,6 @@ const Header = () => {
               </Link>
               <Link to="/terms-of-service" className="px-8 py-2 text-foreground hover:bg-muted" onClick={() => setMobileMenuOpen(false)}>
                 Terms of Service
-              </Link>
-              <Link to="/sms-opt-in" className="px-8 py-2 text-foreground hover:bg-muted" onClick={() => setMobileMenuOpen(false)}>
-                SMS Opt-In
               </Link>
             </nav>
           </div>
