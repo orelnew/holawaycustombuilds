@@ -197,14 +197,14 @@ const Construction = () => {
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-4xl font-bold mb-6">Ready to Start Your Construction Project?</h2>
               <p className="text-xl text-cream/90 mb-8">
-                Get your free, no-obligation quote today. We serve Austin, Round Rock, Georgetown, Cedar Park, and the entire Hill Country area.
+                Get your free, no-obligation quote today. We serve Austin, Round Rock, Georgetown, Cedar Park, and the entire Natural State area.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-primary hover:bg-primary/90" onClick={() => window.location.href = 'tel:+12548005322'}>
+                <Button size="lg" className="bg-primary hover:bg-primary/90" onClick={() => window.location.href = 'tel:+14793646865'}>
                   <Phone className="mr-2 h-5 w-5" />
-                  (254) 800-5322
+                  479-364-6865
                 </Button>
-                <Button size="lg" variant="outline" className="border-2 border-cream text-cream hover:bg-cream hover:text-navy" onClick={() => window.location.href = 'mailto:hillcountryrepairco@gmail.com'}>
+                <Button size="lg" variant="outline" className="border-2 border-cream text-cream hover:bg-cream hover:text-navy" onClick={() => window.location.href = 'mailto:support@homeproconnectarkansas.com'}>
                   <Mail className="mr-2 h-5 w-5" />
                   Email Us
                 </Button>

@@ -8,9 +8,9 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Get Your Free Quote Today</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Get Connected Today</h2>
             <p className="text-xl text-cream/90">
-              Ready to transform your property? Contact us for a free, no-obligation quote
+              Ready to start your project? Let us connect you with trusted local contractors
             </p>
           </div>
 
@@ -19,8 +19,8 @@ const Contact = () => {
               <CardContent className="p-6 text-center">
                 <Phone className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="font-semibold text-lg mb-2 text-cream">Call Us</h3>
-                <a href="tel:+12548005322" className="text-primary hover:text-primary/80 transition-colors text-lg">
-                  (254) 800-5322
+                <a href="tel:+14793646865" className="text-primary hover:text-primary/80 transition-colors text-lg">
+                  479-364-6865
                 </a>
               </CardContent>
             </Card>
@@ -29,8 +29,8 @@ const Contact = () => {
               <CardContent className="p-6 text-center">
                 <Mail className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="font-semibold text-lg mb-2 text-cream">Email Us</h3>
-                <a href="mailto:hillcountryrepairco@gmail.com" className="text-primary hover:text-primary/80 transition-colors break-all">
-                  hillcountryrepairco@gmail.com
+                <a href="mailto:support@homeproconnectarkansas.com" className="text-primary hover:text-primary/80 transition-colors break-all">
+                  support@homeproconnectarkansas.com
                 </a>
               </CardContent>
             </Card>
@@ -40,35 +40,35 @@ const Contact = () => {
                 <MapPin className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="font-semibold text-lg mb-2 text-cream">Service Area</h3>
                 <p className="text-cream/80">
-                  Austin & Surrounding Areas
+                  Serving Arkansas Statewide
                   <br />
-                  <span className="text-sm">15-100 mile radius</span>
+                  <span className="text-sm">Little Rock, Fayetteville & Beyond</span>
                 </p>
               </CardContent>
             </Card>
           </div>
 
           <div className="bg-background/10 backdrop-blur-sm rounded-lg p-8 border border-primary/20 text-center">
-            <h3 className="text-2xl font-bold mb-4 text-cream">Why Choose Holaway Custom Builds?</h3>
+            <h3 className="text-2xl font-bold mb-4 text-cream">Why Choose HomeProConnect Arkansas?</h3>
             <div className="grid md:grid-cols-3 gap-6 mb-6">
               <div>
-                <p className="text-3xl font-bold text-primary mb-2">15+</p>
-                <p className="text-cream/80">Years Experience</p>
+                <p className="text-3xl font-bold text-primary mb-2">Local</p>
+                <p className="text-cream/80">Arkansas Contractors</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-primary mb-2">500+</p>
-                <p className="text-cream/80">Happy Customers</p>
+                <p className="text-3xl font-bold text-primary mb-2">Pre-Screened</p>
+                <p className="text-cream/80">Qualified Professionals</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-primary mb-2">100%</p>
-                <p className="text-cream/80">Satisfaction Guaranteed</p>
+                <p className="text-3xl font-bold text-primary mb-2">Hassle-Free</p>
+                <p className="text-cream/80">Appointment Coordination</p>
               </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
                 className="bg-primary hover:bg-primary/90 text-primary-foreground"
-                onClick={() => window.location.href = 'tel:+12548005322'}
+                onClick={() => window.location.href = 'tel:+14793646865'}
               >
                 <Phone className="mr-2 h-5 w-5" />
                 Call Now for Free Quote
@@ -76,7 +76,7 @@ const Contact = () => {
               <Button
                 size="lg"
                 className="bg-cream text-navy hover:bg-cream/90 hover:text-navy"
-                onClick={() => window.location.href = 'mailto:hillcountryrepairco@gmail.com'}
+                onClick={() => window.location.href = 'mailto:support@homeproconnectarkansas.com'}
               >
                 <Mail className="mr-2 h-5 w-5" />
                 Email Us

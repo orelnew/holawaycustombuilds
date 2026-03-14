@@ -2,9 +2,9 @@ import { MapPin } from "lucide-react";
 
 const ServiceArea = () => {
   const cities = [
-    "Austin", "Round Rock", "Georgetown", "Cedar Park", "Pflugerville",
-    "Leander", "Kyle", "Buda", "San Marcos", "Dripping Springs",
-    "Lakeway", "Bee Cave", "Marble Falls", "Burnet", "Wimberley"
+    "Little Rock", "North Little Rock", "Fayetteville", "Springdale", "Rogers",
+    "Bentonville", "Fort Smith", "Jonesboro", "Conway", "Hot Springs",
+    "Bella Vista", "Texarkana", "Sherwood", "Bryant", "Benton"
   ];
 
   return (
@@ -17,12 +17,12 @@ const ServiceArea = () => {
           </div>
           
           <p className="text-xl mb-8 text-cream/90">
-            Proudly serving Austin and surrounding areas within 15-100 miles
+            Proudly serving Arkansas communities statewide
           </p>
-          
+
           <div className="bg-background/10 backdrop-blur-sm rounded-lg p-8 border border-primary/20">
             <p className="text-lg mb-6 text-cream/90">
-              With deep roots in Texas, we're committed to providing the highest quality work at affordable prices throughout the Hill Country region.
+              Connecting homeowners across the Natural State with trusted, pre-screened local contractors for all your home improvement needs.
             </p>
             
             <div className="flex flex-wrap justify-center gap-3">

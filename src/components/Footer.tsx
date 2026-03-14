@@ -1,53 +1,67 @@
-import logo from "@/assets/logo-2.webp";
-import { Phone, Mail, Instagram } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="bg-foreground text-background py-12">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+        <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <img src={logo} alt="Holaway Custom Builds" className="h-16 w-16" />
-              <h3 className="font-bold text-xl">Holaway Custom Builds</h3>
+            <div className="mb-4">
+              <h3 className="font-bold text-2xl text-primary mb-2">HomeProConnect Arkansas</h3>
+              <p className="text-sm text-background/70">A service of Windflow Media LLC</p>
             </div>
             <p className="text-background/80">
-              Professional painting, fencing, remodeling, and construction services across the Austin and Hill Country area.
+              Connecting Arkansas homeowners with trusted local contractors for kitchen remodels, bathroom renovations, and home improvement projects.
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold text-lg mb-4">Services</h4>
+            <h4 className="font-semibold text-lg mb-4">Company</h4>
             <ul className="space-y-2 text-background/80">
-              <li>Interior & Exterior Painting</li>
-              <li>Fencing Installation & Repair</li>
-              <li>Home Remodeling</li>
-              <li>Construction & Tilework</li>
+              <li><Link to="/about" className="hover:text-primary transition-colors">About Us</Link></li>
+              <li><Link to="/how-it-works" className="hover:text-primary transition-colors">How It Works</Link></li>
+              <li><Link to="/why-choose-us" className="hover:text-primary transition-colors">Why Choose Us</Link></li>
+              <li><Link to="/service-area" className="hover:text-primary transition-colors">Service Area</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-4">Resources</h4>
+            <ul className="space-y-2 text-background/80">
+              <li><Link to="/gallery" className="hover:text-primary transition-colors">Gallery</Link></li>
+              <li><Link to="/testimonials" className="hover:text-primary transition-colors">Testimonials</Link></li>
+              <li><Link to="/faq" className="hover:text-primary transition-colors">FAQ</Link></li>
+              <li><Link to="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-semibold text-lg mb-4">Contact</h4>
             <div className="space-y-3 text-background/80">
-              <a href="tel:+12548005322" className="flex items-center gap-2 hover:text-primary transition-colors">
+              <a href="tel:+14793646865" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <Phone className="h-4 w-4" />
-                (254) 800-5322
+                479-364-6865
               </a>
-              <a href="mailto:hillcountryrepairco@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors break-all">
+              <a href="mailto:support@homeproconnectarkansas.com" className="flex items-center gap-2 hover:text-primary transition-colors break-all">
                 <Mail className="h-4 w-4" />
-                hillcountryrepairco@gmail.com
-              </a>
-              <a href="https://www.instagram.com/holawaycustombuilds/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">
-                <Instagram className="h-4 w-4" />
-                @holawaycustombuilds
+                support@homeproconnectarkansas.com
               </a>
             </div>
           </div>
         </div>
 
         <div className="border-t border-background/20 pt-8 text-center text-background/60">
-          <p>&copy; {new Date().getFullYear()} Holaway Custom Builds. All rights reserved.</p>
-          <p className="mt-2 text-sm">Serving Austin, Round Rock, Georgetown, Cedar Park, and surrounding areas</p>
+          <p>&copy; {new Date().getFullYear()} HomeProConnect Arkansas. All rights reserved.</p>
+          <div className="flex justify-center gap-4 mt-3 text-sm flex-wrap">
+            <Link to="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
+            <span>•</span>
+            <Link to="/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</Link>
+            <span>•</span>
+            <Link to="/sms-opt-in" className="hover:text-primary transition-colors">SMS Opt-In</Link>
+          </div>
+          <p className="mt-3 text-sm">Serving Little Rock, Fayetteville, Springdale, Rogers, and communities across Arkansas</p>
+          <p className="mt-2 text-xs">Operated by Windflow Media LLC | 30 N Gould St Ste N, Sheridan, WY 82801</p>
         </div>
       </div>
     </footer>

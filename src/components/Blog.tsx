@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 
 const blogPosts = [
   {
-    title: "Top 5 Paint Colors for Texas Homes in 2025",
+    title: "Top 5 Paint Colors for Arkansas Homes in 2025",
     slug: "paint-colors-2025",
-    excerpt: "Discover the trending paint colors that perfectly complement the Texas Hill Country aesthetic while keeping your home cool and stylish.",
+    excerpt: "Discover the trending paint colors that perfectly complement the Arkansas Natural State aesthetic while keeping your home cool and stylish.",
     date: "January 15, 2025",
     category: "Painting Tips"
   },
@@ -26,16 +26,16 @@ const blogPosts = [
     category: "Remodeling"
   },
   {
-    title: "Essential Home Maintenance for Texas Weather",
+    title: "Essential Home Maintenance for Arkansas Weather",
     slug: "home-maintenance-texas",
-    excerpt: "Protect your investment with our seasonal home maintenance checklist tailored for the Texas Hill Country's unique climate challenges.",
+    excerpt: "Protect your investment with our seasonal home maintenance checklist tailored for the Arkansas Natural State's unique climate challenges.",
     date: "December 28, 2024",
     category: "Home Care"
   },
   {
     title: "Outdoor Living Space Trends for 2025",
     slug: "outdoor-living-trends-2025",
-    excerpt: "Discover the hottest outdoor living trends and how to create your perfect backyard oasis in the Austin area.",
+    excerpt: "Discover the hottest outdoor living trends and how to create your perfect backyard oasis in the Arkansas.",
     date: "December 20, 2024",
     category: "Outdoor Living"
   },

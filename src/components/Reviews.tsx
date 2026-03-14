@@ -4,45 +4,45 @@ import { Star } from "lucide-react";
 const reviews = [
   {
     name: "Sarah Martinez",
-    location: "Austin, TX",
+    location: "Little Rock, AR",
     rating: 5,
-    review: "Holaway Custom Builds did an amazing job painting our home's exterior. The crew was professional, arrived on time every day, and the attention to detail was outstanding. Our house looks brand new!",
-    service: "Exterior Painting"
+    review: "HomeProConnect made finding a contractor so easy! They coordinated everything and connected us with a great painter. The whole process was smooth and professional. Highly recommend!",
+    service: "Painting Coordination"
   },
   {
     name: "Michael Thompson",
-    location: "Round Rock, TX",
+    location: "Fayetteville, AR",
     rating: 5,
-    review: "We hired them to build a fence around our backyard and couldn't be happier. Quality workmanship at a fair price. They cleaned up everything when done. Highly recommend!",
-    service: "Fencing"
+    review: "We needed a fence installed and HomeProConnect matched us with a quality contractor in our area. They handled all the scheduling and made the process hassle-free!",
+    service: "Fencing Coordination"
   },
   {
     name: "Jennifer Lopez",
-    location: "Cedar Park, TX",
+    location: "Springdale, AR",
     rating: 5,
-    review: "Our kitchen remodel was completed beautifully and within budget. The team was respectful of our home and communicated with us throughout the entire process. We love our new kitchen!",
+    review: "Getting our kitchen remodeled was stressful until we found HomeProConnect. They connected us with the perfect contractor and coordinated our consultation. Very impressed!",
     service: "Kitchen Remodeling"
   },
   {
     name: "David Chen",
-    location: "Georgetown, TX",
+    location: "Rogers, AR",
     rating: 5,
-    review: "Exceptional tile work in our bathrooms. The craftsmanship is evident in every detail. They turned our outdated bathrooms into modern, beautiful spaces. Worth every penny!",
-    service: "Tilework"
+    review: "The coordination service was fantastic! They quickly connected us with a qualified contractor for our bathroom renovation. Communication was excellent throughout.",
+    service: "Bathroom Renovation"
   },
   {
     name: "Emily Rodriguez",
-    location: "Pflugerville, TX",
+    location: "Bentonville, AR",
     rating: 5,
-    review: "From start to finish, this company exceeded our expectations. Interior painting was flawless, and they took great care to protect our furniture and floors. Very impressed!",
+    review: "HomeProConnect saved us so much time! Instead of calling dozens of contractors, they matched us with pre-screened professionals. The contractor they connected us with was perfect!",
     service: "Interior Painting"
   },
   {
     name: "Robert Johnson",
-    location: "Leander, TX",
+    location: "Conway, AR",
     rating: 5,
-    review: "Reliable, affordable, and professional - exactly as advertised. They completed our home exterior renovation on schedule and the results are stunning. Best decision we made!",
-    service: "Exterior Remodeling"
+    review: "Great service! They made it easy to connect with a reliable contractor for our home renovation. No more phone tag or endless searching. Exactly what we needed!",
+    service: "Home Renovation"
   }
 ];
 
@@ -51,9 +51,9 @@ const Reviews = () => {
     <section id="reviews" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">What Our Clients Say</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">What Homeowners Say</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Don't just take our word for it - hear from our satisfied customers across the Austin area
+            Don't just take our word for it - hear from satisfied homeowners across Arkansas
           </p>
         </div>
 

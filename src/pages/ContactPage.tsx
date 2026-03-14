@@ -41,10 +41,10 @@ const ContactPage = () => {
                           Give us a call for immediate assistance or to schedule a free consultation.
                         </p>
                         <a
-                          href="tel:+12548005322"
+                          href="tel:+14793646865"
                           className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors block"
                         >
-                          (254) 800-5322
+                          479-364-6865
                         </a>
                         <p className="text-sm text-muted-foreground mt-2">
                           Available Monday - Saturday, 7 AM - 6 PM
@@ -67,10 +67,10 @@ const ContactPage = () => {
                           Send us an email and we'll get back to you within 24 hours.
                         </p>
                         <a
-                          href="mailto:hillcountryrepairco@gmail.com"
+                          href="mailto:support@homeproconnectarkansas.com"
                           className="text-lg font-semibold text-primary hover:text-primary/80 transition-colors block break-all"
                         >
-                          hillcountryrepairco@gmail.com
+                          support@homeproconnectarkansas.com
                         </a>
                         <p className="text-sm text-muted-foreground mt-2">
                           We respond to all inquiries promptly
@@ -102,7 +102,7 @@ const ContactPage = () => {
                           <li>• Cedar Park</li>
                           <li>• Pflugerville</li>
                           <li>• Leander</li>
-                          <li>• And surrounding Hill Country communities</li>
+                          <li>• And surrounding Natural State communities</li>
                         </ul>
                       </div>
                     </div>
@@ -188,16 +188,16 @@ const ContactPage = () => {
                 <Button
                   size="lg"
                   className="bg-primary hover:bg-primary/90"
-                  onClick={() => window.location.href = 'tel:+12548005322'}
+                  onClick={() => window.location.href = 'tel:+14793646865'}
                 >
                   <Phone className="mr-2 h-5 w-5" />
-                  (254) 800-5322
+                  479-364-6865
                 </Button>
                 <Button
                   size="lg"
                   variant="outline"
                   className="border-2 border-cream text-cream hover:bg-cream hover:text-navy"
-                  onClick={() => window.location.href = 'mailto:hillcountryrepairco@gmail.com'}
+                  onClick={() => window.location.href = 'mailto:support@homeproconnectarkansas.com'}
                 >
                   <Mail className="mr-2 h-5 w-5" />
                   Email Us

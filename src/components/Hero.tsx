@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/Austin.png";
-import logo from "@/assets/logo-2.webp";
 import { Phone } from "lucide-react";
 
 const Hero = () => {
@@ -24,37 +23,42 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 py-32 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
-          <img src={logo} alt="Holaway Custom Builds" className="h-32 w-32 md:h-48 md:w-48 mx-auto mb-6 animate-in fade-in zoom-in duration-700" />
-          
-          <h1 className="text-5xl md:text-7xl font-bold text-cream animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100">
-            Quality Work at
-            <span className="block text-primary mt-2">Affordable Prices</span>
-          </h1>
-          
+          <div className="animate-in fade-in zoom-in duration-700">
+            <h1 className="text-6xl md:text-8xl font-bold text-primary mb-4">
+              HomeProConnect
+            </h1>
+            <p className="text-2xl md:text-3xl font-semibold text-cream">Arkansas</p>
+          </div>
+
+          <h2 className="text-4xl md:text-6xl font-bold text-cream animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100">
+            Connecting Homeowners with
+            <span className="block text-primary mt-2">Trusted Local Contractors</span>
+          </h2>
+
           <p className="text-xl md:text-2xl text-cream/90 max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">
-            Proudly serving Austin and the greater Hill Country area with professional painting, fencing, remodeling, and construction services
+            We help coordinate appointments between Arkansas homeowners and pre-screened home improvement professionals in your area
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               onClick={scrollToContact}
               className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6"
             >
-              Get Your Free Quote
+              Get Started Today
             </Button>
             <Button
               size="lg"
               className="bg-cream text-navy hover:bg-cream/90 hover:text-navy text-lg px-8 py-6"
-              onClick={() => window.location.href = 'tel:+12548005322'}
+              onClick={() => window.location.href = 'tel:+14793646865'}
             >
               <Phone className="mr-2 h-5 w-5" />
-              (254) 800-5322
+              479-364-6865
             </Button>
           </div>
 
           <div className="pt-8 animate-in fade-in duration-700 delay-500">
-            <p className="text-cream font-semibold text-lg mb-2">Reliable • Affordable • Professional</p>
+            <p className="text-cream font-semibold text-lg mb-2">Local Focus • Pre-Screened Professionals • Hassle-Free Scheduling</p>
           </div>
         </div>
       </div>

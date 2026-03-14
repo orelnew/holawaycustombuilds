@@ -8,7 +8,6 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Progress } from "@/components/ui/progress";
 import { ArrowLeft, ArrowRight, CheckCircle2 } from "lucide-react";
 import rooferImage from "@/assets/roofer_image.png";
-import logo from "@/assets/logo-2.webp";
 
 interface FormData {
   name: string;
@@ -554,16 +553,14 @@ const RoofingLeadFunnel = () => {
         </div>
 
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
-          <img
-            src={logo}
-            alt="Holaway Custom Builds"
-            className="h-16 w-16 md:h-20 md:w-20 mb-4 animate-in fade-in zoom-in duration-500"
-          />
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2 animate-in fade-in slide-in-from-bottom-4 duration-500 delay-100">
-            Hill Country Roofing Services
-          </h1>
+          <div className="mb-4 animate-in fade-in zoom-in duration-500">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-2">
+              HomeProConnect Arkansas
+            </h1>
+            <p className="text-sm text-cream/80">Connecting Homeowners with Trusted Contractors</p>
+          </div>
           <p className="text-lg md:text-xl text-cream/90 max-w-2xl animate-in fade-in slide-in-from-bottom-4 duration-500 delay-200">
-            Get Your Free Roofing Estimate - Expert Service You Can Trust
+            Get Your Free Roofing Estimate — We'll Connect You with Qualified Roofing Contractors
           </p>
         </div>
       </div>

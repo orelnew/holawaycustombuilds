@@ -8,7 +8,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Progress } from "@/components/ui/progress";
 import { ArrowLeft, ArrowRight, CheckCircle2 } from "lucide-react";
 import remodelingImage from "@/assets/Gemini_Generated_Image_vv5efovv5efovv5e.png";
-import logo from "@/assets/logo-2.webp";
 
 const imageModules = import.meta.glob('../assets/client-images/*.{jpg,JPG,jpeg,png}', { eager: true, query: '?url', import: 'default' });
 const clientImages = Object.values(imageModules) as string[];
@@ -499,16 +498,14 @@ const LeadFunnel = () => {
       <div className="min-h-screen bg-gradient-to-br from-primary/5 via-white to-primary/10 flex flex-col items-center justify-center p-4">
         <div className="max-w-2xl w-full text-center space-y-8 animate-in fade-in duration-500">
           <div className="flex flex-col items-center space-y-4">
-            <img
-              src={logo}
-              alt="Holaway Custom Builds"
-              className="h-28 w-28 md:h-36 md:w-36"
-            />
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
-              Holaway Custom Builds
-            </h1>
-            <p className="text-lg text-gray-600 max-w-lg">
-              Your dream kitchen is waiting — let's bring your vision to life.
+            <div className="space-y-2">
+              <h1 className="text-4xl md:text-5xl font-bold text-primary">
+                HomeProConnect Arkansas
+              </h1>
+              <p className="text-sm text-gray-600">Connecting Homeowners with Trusted Contractors</p>
+            </div>
+            <p className="text-lg text-gray-600 max-w-lg mt-4">
+              Your dream kitchen is waiting — let us connect you with the perfect contractor to bring your vision to life.
             </p>
           </div>
 
@@ -521,10 +518,10 @@ const LeadFunnel = () => {
           </Button>
 
           <div className="w-full space-y-3">
-            <p className="text-lg font-semibold text-gray-800 text-center">Check out what our clients are saying about us:</p>
+            <p className="text-lg font-semibold text-gray-800 text-center">See what homeowners are saying:</p>
             <div className="w-full rounded-xl overflow-hidden border border-gray-200 shadow-sm">
               <iframe
-                title="Holaway Custom Builds"
+                title="HomeProConnect Arkansas Reviews"
                 src="https://player.vimeo.com/video/1160786568"
                 className="w-full"
                 style={{ aspectRatio: '16/9' }}
@@ -617,16 +614,14 @@ const LeadFunnel = () => {
         </div>
 
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
-          <img
-            src={logo}
-            alt="Holaway Custom Builds"
-            className="h-16 w-16 md:h-20 md:w-20 mb-4 animate-in fade-in zoom-in duration-500"
-          />
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2 animate-in fade-in slide-in-from-bottom-4 duration-500 delay-100">
-            Holaway Custom Builds
-          </h1>
+          <div className="mb-4 animate-in fade-in zoom-in duration-500">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-2">
+              HomeProConnect Arkansas
+            </h1>
+            <p className="text-sm text-cream/80">Connecting Homeowners with Trusted Contractors</p>
+          </div>
           <p className="text-lg md:text-xl text-cream/90 max-w-2xl animate-in fade-in slide-in-from-bottom-4 duration-500 delay-200">
-            Get Your Kitchen Remodeling Consultation — Let's Turn Your Vision Into Reality
+            Get Your Kitchen Remodeling Consultation — We'll Connect You with the Perfect Contractor
           </p>
         </div>
       </div>

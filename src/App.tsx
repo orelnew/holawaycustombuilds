@@ -25,6 +25,20 @@ import LeadFunnel from "./pages/LeadFunnel";
 import RoofingLeadFunnel from "./pages/RoofingLeadFunnel";
 import BookMeeting from "./pages/BookMeeting";
 
+// New Pages
+import AboutUs from "./pages/AboutUs";
+import HowItWorks from "./pages/HowItWorks";
+import WhyChooseUs from "./pages/WhyChooseUs";
+import Gallery from "./pages/Gallery";
+import FAQ from "./pages/FAQ";
+import ServiceAreaPage from "./pages/ServiceAreaPage";
+import TestimonialsPage from "./pages/TestimonialsPage";
+
+// Legal Pages
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
+import SMSOptIn from "./pages/SMSOptIn";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -54,6 +68,20 @@ const App = () => (
           <Route path="/get-started" element={<LeadFunnel />} />
           <Route path="/roofing-estimate" element={<RoofingLeadFunnel />} />
           <Route path="/book-meeting" element={<BookMeeting />} />
+
+          {/* New Pages */}
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/how-it-works" element={<HowItWorks />} />
+          <Route path="/why-choose-us" element={<WhyChooseUs />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/service-area" element={<ServiceAreaPage />} />
+          <Route path="/testimonials" element={<TestimonialsPage />} />
+
+          {/* Legal Pages */}
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
+          <Route path="/sms-opt-in" element={<SMSOptIn />} />
 
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

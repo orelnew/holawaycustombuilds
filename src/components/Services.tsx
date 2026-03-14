@@ -7,30 +7,30 @@ import constructionImage from "@/assets/construction-service.jpg";
 
 const services = [
   {
-    title: "Painting",
+    title: "Painting Projects",
     slug: "painting",
-    description: "Professional interior and exterior painting services. We transform your space with precision and quality craftsmanship.",
+    description: "We connect you with skilled painting contractors for interior and exterior projects throughout Arkansas.",
     image: paintingImage,
     features: ["Interior Painting", "Exterior Painting", "Color Consultation", "Surface Preparation"]
   },
   {
-    title: "Fencing",
+    title: "Fencing Projects",
     slug: "fencing",
-    description: "Custom fence installation and repair to secure and beautify your property with durable, attractive solutions.",
+    description: "Find qualified fencing contractors for custom installation and repair projects to secure your property.",
     image: fencingImage,
     features: ["Wood Fencing", "Chain Link", "Privacy Fences", "Repairs & Maintenance"]
   },
   {
-    title: "Remodeling",
+    title: "Remodeling Projects",
     slug: "remodeling",
-    description: "Complete interior and exterior remodeling to bring your vision to life with expert design and execution.",
+    description: "Get matched with experienced remodeling contractors to bring your renovation vision to life.",
     image: remodelingImage,
     features: ["Kitchen Remodeling", "Bathroom Upgrades", "Room Additions", "Exterior Renovations"]
   },
   {
-    title: "Construction",
+    title: "Construction Projects",
     slug: "construction",
-    description: "From demolition to finishing touches, we handle all aspects of construction with professional expertise.",
+    description: "Connect with professional construction contractors for projects from demolition to finishing touches.",
     image: constructionImage,
     features: ["Demolition", "Flooring Installation", "Tilework", "General Construction"]
   }
@@ -41,9 +41,9 @@ const Services = () => {
     <section id="services" className="py-20 bg-card">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Our Services</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Project Types We Help Coordinate</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Professional craftsmanship backed by years of experience serving the Austin area
+            Connecting Arkansas homeowners with qualified contractors for all types of home improvement projects
           </p>
         </div>
 

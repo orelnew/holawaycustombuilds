@@ -137,11 +137,11 @@ const KitchenRemodelingBudget = () => {
                     Let's discuss your vision and budget. We'll help you make smart choices that maximize your investment and create the kitchen you've been dreaming of.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <Button size="lg" onClick={() => window.location.href = 'tel:+12548005322'}>
+                    <Button size="lg" onClick={() => window.location.href = 'tel:+14793646865'}>
                       <Phone className="mr-2 h-5 w-5" />
                       Schedule Consultation
                     </Button>
-                    <Button size="lg" variant="outline" className="text-foreground hover:text-foreground" onClick={() => window.location.href = 'mailto:hillcountryrepairco@gmail.com'}>
+                    <Button size="lg" variant="outline" className="text-foreground hover:text-foreground" onClick={() => window.location.href = 'mailto:support@homeproconnectarkansas.com'}>
                       <Mail className="mr-2 h-5 w-5" />
                       Email Us
                     </Button>

@@ -181,7 +181,7 @@ const OurApproach = () => {
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-4xl font-bold text-foreground mb-6">Our Promise to You</h2>
               <p className="text-xl text-muted-foreground mb-8">
-                We promise to deliver honest, reliable service and quality workmanship on every project. Your satisfaction is guaranteed, and we won't rest until you're thrilled with the results. We're not just building and repairing homes—we're building lasting relationships with our clients across the Austin and Hill Country area.
+                We promise to deliver honest, reliable service and quality workmanship on every project. Your satisfaction is guaranteed, and we won't rest until you're thrilled with the results. We're not just building and repairing homes—we're building lasting relationships with our clients across the Austin and Natural State area.
               </p>
               <div className="bg-background rounded-lg p-8 border-2 border-primary/20">
                 <p className="text-2xl font-bold text-primary mb-2">100% Satisfaction Guaranteed</p>
@@ -205,16 +205,16 @@ const OurApproach = () => {
                 <Button
                   size="lg"
                   className="bg-primary hover:bg-primary/90"
-                  onClick={() => window.location.href = 'tel:+12548005322'}
+                  onClick={() => window.location.href = 'tel:+14793646865'}
                 >
                   <Phone className="mr-2 h-5 w-5" />
-                  (254) 800-5322
+                  479-364-6865
                 </Button>
                 <Button
                   size="lg"
                   variant="outline"
                   className="border-2 border-cream text-cream hover:bg-cream hover:text-navy"
-                  onClick={() => window.location.href = 'mailto:hillcountryrepairco@gmail.com'}
+                  onClick={() => window.location.href = 'mailto:support@homeproconnectarkansas.com'}
                 >
                   <Mail className="mr-2 h-5 w-5" />
                   Email Us

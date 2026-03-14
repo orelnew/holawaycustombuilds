@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import logo from "@/assets/logo-2.webp";
 import { Phone, Mail } from "lucide-react";
 
 const Header = () => {
@@ -23,36 +22,36 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
-            <img src={logo} alt="Holaway Custom Builds" className="h-12 w-12" />
-            <div className="hidden sm:block">
-              <h1 className="font-bold text-lg text-foreground">Holaway Custom Builds</h1>
+            <div>
+              <h1 className="font-bold text-xl text-primary">HomeProConnect Arkansas</h1>
+              <p className="text-xs text-foreground/60 hidden sm:block">Connecting Homeowners with Trusted Contractors</p>
             </div>
           </Link>
 
           <div className="hidden md:flex items-center gap-6">
-            <button onClick={() => scrollToSection("services")} className="text-foreground hover:text-primary transition-colors">
-              Services
-            </button>
-            <Link to="/our-approach" className="text-foreground hover:text-primary transition-colors">
-              Our Approach
+            <Link to="/how-it-works" className="text-foreground hover:text-primary transition-colors">
+              How It Works
             </Link>
-            <button onClick={() => scrollToSection("reviews")} className="text-foreground hover:text-primary transition-colors">
-              Reviews
-            </button>
-            <button onClick={() => scrollToSection("blog")} className="text-foreground hover:text-primary transition-colors">
-              Blog
-            </button>
-            <Link to="/contact">
+            <Link to="/about" className="text-foreground hover:text-primary transition-colors">
+              About
+            </Link>
+            <Link to="/gallery" className="text-foreground hover:text-primary transition-colors">
+              Gallery
+            </Link>
+            <Link to="/faq" className="text-foreground hover:text-primary transition-colors">
+              FAQ
+            </Link>
+            <Link to="/sms-opt-in">
               <Button variant="default">
-                Contact Us
+                Get Started
               </Button>
             </Link>
           </div>
 
           <div className="md:hidden">
-            <Link to="/contact">
+            <Link to="/sms-opt-in">
               <Button size="sm">
-                Contact
+                Get Started
               </Button>
             </Link>
           </div>

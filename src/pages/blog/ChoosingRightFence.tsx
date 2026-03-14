@@ -39,10 +39,10 @@ const ChoosingRightFence = () => {
 
                 <h2 className="text-3xl font-bold text-foreground mt-8 mb-4">Why the Right Fence Matters</h2>
                 <p className="text-foreground/80 mb-6">
-                  Your fence is more than just a boundary marker—it's a significant investment that affects your property's security, privacy, curb appeal, and value. In the Texas climate, choosing the right materials and style is crucial for longevity and performance.
+                  Your fence is more than just a boundary marker—it's a significant investment that affects your property's security, privacy, curb appeal, and value. In the Arkansas climate, choosing the right materials and style is crucial for longevity and performance.
                 </p>
 
-                <h2 className="text-3xl font-bold text-foreground mt-8 mb-4">Popular Fence Types for Texas Properties</h2>
+                <h2 className="text-3xl font-bold text-foreground mt-8 mb-4">Popular Fence Types for Arkansas Properties</h2>
 
                 <h3 className="text-2xl font-bold text-foreground mt-6 mb-3">Wood Fencing</h3>
                 <p className="text-foreground/80 mb-2"><strong>Best For:</strong> Privacy, traditional aesthetics, customization</p>
@@ -70,7 +70,7 @@ const ChoosingRightFence = () => {
                   <li>Most economical option</li>
                   <li>Very durable and low maintenance</li>
                   <li>Doesn't obstruct views</li>
-                  <li>Withstands Texas weather well</li>
+                  <li>Withstands Arkansas weather well</li>
                 </ul>
                 <p className="text-foreground/80 mb-2"><strong>Cons:</strong></p>
                 <ul className="list-disc pl-6 space-y-1 text-foreground/80 mb-4">
@@ -124,7 +124,7 @@ const ChoosingRightFence = () => {
 
                 <h3 className="text-2xl font-bold text-foreground mt-6 mb-3">4. Climate Considerations</h3>
                 <p className="text-foreground/80 mb-6">
-                  Texas weather is tough on fences. Choose materials that can withstand intense sun, occasional freezes, and high winds. Heat-resistant and UV-protected materials will last longer.
+                  Arkansas weather is tough on fences. Choose materials that can withstand intense sun, occasional freezes, and high winds. Heat-resistant and UV-protected materials will last longer.
                 </p>
 
                 <h2 className="text-3xl font-bold text-foreground mt-8 mb-4">Professional Installation Matters</h2>
@@ -138,11 +138,11 @@ const ChoosingRightFence = () => {
                     Our experienced team can assess your property, discuss your needs, and recommend the perfect fencing solution for your Austin-area home.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <Button size="lg" onClick={() => window.location.href = 'tel:+12548005322'}>
+                    <Button size="lg" onClick={() => window.location.href = 'tel:+14793646865'}>
                       <Phone className="mr-2 h-5 w-5" />
                       Get Free Consultation
                     </Button>
-                    <Button size="lg" variant="outline" className="text-foreground hover:text-foreground" onClick={() => window.location.href = 'mailto:hillcountryrepairco@gmail.com'}>
+                    <Button size="lg" variant="outline" className="text-foreground hover:text-foreground" onClick={() => window.location.href = 'mailto:support@homeproconnectarkansas.com'}>
                       <Mail className="mr-2 h-5 w-5" />
                       Email Us
                     </Button>
