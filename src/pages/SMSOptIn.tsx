@@ -15,7 +15,9 @@ import { CheckCircle2 } from "lucide-react";
 const formSchema = z.object({
   firstName: z.string().min(2, "First name must be at least 2 characters"),
   lastName: z.string().min(2, "Last name must be at least 2 characters"),
-  phone: z.string().regex(/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/, "Invalid phone number format"),
+  phone: z.string().optional().refine((val) => !val || /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/.test(val), {
+    message: "Invalid phone number format"
+  }),
   email: z.string().email("Invalid email address"),
   transactionalConsent: z.boolean().optional(),
   marketingConsent: z.boolean().optional(),
@@ -133,7 +135,7 @@ const SMSOptIn = () => {
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="phone">Phone <span className="text-destructive">*</span></Label>
+                      <Label htmlFor="phone">Phone (Optional)</Label>
                       <Input
                         id="phone"
                         type="tel"
