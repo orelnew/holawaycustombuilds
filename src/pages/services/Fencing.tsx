@@ -197,12 +197,12 @@ const Fencing = () => {
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-4xl font-bold mb-6">Ready to Secure Your Property?</h2>
               <p className="text-xl text-cream/90 mb-8">
-                Get your free, no-obligation quote today. We serve Austin, Round Rock, Georgetown, Cedar Park, and the entire Natural State area.
+                Get your free, no-obligation consultation today. We connect homeowners nationwide with qualified local contractors.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-primary hover:bg-primary/90" onClick={() => window.location.href = 'tel:+14793646865'}>
+                <Button size="lg" className="bg-primary hover:bg-primary/90" onClick={() => window.location.href = 'tel:+15162889893'}>
                   <Phone className="mr-2 h-5 w-5" />
-                  479-364-6865
+                  516-288-9893
                 </Button>
                 <Button size="lg" variant="outline" className="border-2 border-cream text-cream hover:bg-cream hover:text-navy" onClick={() => window.location.href = 'mailto:support@homeproconnectarkansas.com'}>
                   <Mail className="mr-2 h-5 w-5" />

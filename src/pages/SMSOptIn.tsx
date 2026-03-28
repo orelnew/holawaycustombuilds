@@ -13,8 +13,8 @@ import { Link } from "react-router-dom";
 import { CheckCircle2 } from "lucide-react";
 
 const formSchema = z.object({
-  firstName: z.string().min(2, "First name must be at least 2 characters"),
-  lastName: z.string().min(2, "Last name must be at least 2 characters"),
+  firstName: z.string().optional(),
+  lastName: z.string().optional(),
   phone: z.string().optional().refine((val) => !val || /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/.test(val), {
     message: "Invalid phone number format"
   }),
@@ -110,7 +110,7 @@ const SMSOptIn = () => {
                     {/* Contact Fields */}
                     <div className="grid md:grid-cols-2 gap-4">
                       <div className="space-y-2">
-                        <Label htmlFor="firstName">First Name <span className="text-destructive">*</span></Label>
+                        <Label htmlFor="firstName">First Name (Optional)</Label>
                         <Input
                           id="firstName"
                           {...register("firstName")}
@@ -122,7 +122,7 @@ const SMSOptIn = () => {
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="lastName">Last Name <span className="text-destructive">*</span></Label>
+                        <Label htmlFor="lastName">Last Name (Optional)</Label>
                         <Input
                           id="lastName"
                           {...register("lastName")}
@@ -182,7 +182,7 @@ const SMSOptIn = () => {
                             htmlFor="transactionalConsent"
                             className="text-sm leading-relaxed cursor-pointer"
                           >
-                            I consent to receive transactional messages from <strong>HomeProConnect (DBA Windflow Media LLC)</strong> at the phone number provided. This includes appointment reminders and meeting updates. Message frequency may vary (typically 2-5 messages per month). Message & data rates may apply. Reply HELP for help or STOP to opt out.
+                            I consent to receive transactional messages from <strong>Windflow Media LLC (DBA HomeProConnect)</strong> at the phone number provided. This includes appointment reminders and meeting updates. Message frequency may vary (typically 2-5 messages per month). Message & data rates may apply. Reply HELP for help or STOP to opt out.
                           </label>
                         </div>
                       </div>
@@ -198,7 +198,7 @@ const SMSOptIn = () => {
                             htmlFor="marketingConsent"
                             className="text-sm leading-relaxed cursor-pointer"
                           >
-                            I consent to receive marketing and promotional messages from <strong>HomeProConnect (DBA Windflow Media LLC)</strong> at the phone number provided. This includes case studies and business tips. Message frequency may vary (typically 2-5 messages per month). Message & data rates may apply. Reply HELP for help or STOP to opt out.
+                            I consent to receive marketing and promotional messages from <strong>Windflow Media LLC (DBA HomeProConnect)</strong> at the phone number provided. This includes case studies and business tips. Message frequency may vary (typically 2-5 messages per month). Message & data rates may apply. Reply HELP for help or STOP to opt out.
                           </label>
                         </div>
                       </div>

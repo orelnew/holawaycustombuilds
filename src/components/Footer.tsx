@@ -39,9 +39,9 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-lg mb-4">Contact</h4>
             <div className="space-y-3 text-background/80">
-              <a href="tel:+14793646865" className="flex items-center gap-2 hover:text-primary transition-colors">
+              <a href="tel:+15162889893" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <Phone className="h-4 w-4" />
-                479-364-6865
+                516-288-9893
               </a>
               <a href="mailto:support@homeproconnectarkansas.com" className="flex items-center gap-2 hover:text-primary transition-colors break-all">
                 <Mail className="h-4 w-4" />

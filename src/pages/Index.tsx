@@ -54,6 +54,9 @@ const Index = () => {
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 Everything you need to know about connecting with trusted contractors
               </p>
+              <p className="text-sm text-muted-foreground mt-3">
+                A service of <strong>Windflow Media LLC</strong>
+              </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
               {quickLinks.map((link, index) => {

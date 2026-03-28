@@ -41,10 +41,10 @@ const ContactPage = () => {
                           Give us a call for immediate assistance or to schedule a free consultation.
                         </p>
                         <a
-                          href="tel:+14793646865"
+                          href="tel:+15162889893"
                           className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors block"
                         >
-                          479-364-6865
+                          516-288-9893
                         </a>
                         <p className="text-sm text-muted-foreground mt-2">
                           Available Monday - Saturday, 7 AM - 6 PM
@@ -188,10 +188,10 @@ const ContactPage = () => {
                 <Button
                   size="lg"
                   className="bg-primary hover:bg-primary/90"
-                  onClick={() => window.location.href = 'tel:+14793646865'}
+                  onClick={() => window.location.href = 'tel:+15162889893'}
                 >
                   <Phone className="mr-2 h-5 w-5" />
-                  479-364-6865
+                  516-288-9893
                 </Button>
                 <Button
                   size="lg"

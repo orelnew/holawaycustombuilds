@@ -181,7 +181,7 @@ const OurApproach = () => {
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-4xl font-bold text-foreground mb-6">Our Promise to You</h2>
               <p className="text-xl text-muted-foreground mb-8">
-                We promise to deliver honest, reliable service and quality workmanship on every project. Your satisfaction is guaranteed, and we won't rest until you're thrilled with the results. We're not just building and repairing homes—we're building lasting relationships with our clients across the Austin and Natural State area.
+                We promise to connect you with contractors who deliver honest, reliable service and quality workmanship on every project. Your satisfaction is our priority, and we carefully vet our network to ensure you receive exceptional service. We're building lasting relationships with homeowners nationwide.
               </p>
               <div className="bg-background rounded-lg p-8 border-2 border-primary/20">
                 <p className="text-2xl font-bold text-primary mb-2">100% Satisfaction Guaranteed</p>
@@ -205,10 +205,10 @@ const OurApproach = () => {
                 <Button
                   size="lg"
                   className="bg-primary hover:bg-primary/90"
-                  onClick={() => window.location.href = 'tel:+14793646865'}
+                  onClick={() => window.location.href = 'tel:+15162889893'}
                 >
                   <Phone className="mr-2 h-5 w-5" />
-                  479-364-6865
+                  516-288-9893
                 </Button>
                 <Button
                   size="lg"

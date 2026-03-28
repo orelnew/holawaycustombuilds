@@ -49,10 +49,10 @@ const Hero = () => {
             <Button
               size="lg"
               className="bg-cream text-navy hover:bg-cream/90 hover:text-navy text-lg px-8 py-6"
-              onClick={() => window.location.href = 'tel:+14793646865'}
+              onClick={() => window.location.href = 'tel:+15162889893'}
             >
               <Phone className="mr-2 h-5 w-5" />
-              479-364-6865
+              516-288-9893
             </Button>
           </div>
 
