@@ -15,7 +15,7 @@ const Header = () => {
           <Link to="/" className="flex items-center gap-3">
             <div>
               <h1 className="font-bold text-xl text-primary">HomeProConnect</h1>
-              <p className="text-xs text-foreground/60 hidden sm:block">Connecting Homeowners with Trusted Contractors</p>
+              <p className="text-xs text-foreground/60 hidden sm:block">A service of Windflow Media LLC</p>
             </div>
           </Link>
 
