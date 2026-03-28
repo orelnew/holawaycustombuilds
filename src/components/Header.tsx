@@ -48,7 +48,7 @@ const Header = () => {
                 </Link>
               </div>
             </div>
-            <Link to="/sms-opt-in">
+            <Link to="/get-started">
               <Button variant="default">
                 Get Started
               </Button>
@@ -56,7 +56,7 @@ const Header = () => {
           </div>
 
           <div className="lg:hidden flex items-center gap-2">
-            <Link to="/sms-opt-in">
+            <Link to="/get-started">
               <Button size="sm">Get Started</Button>
             </Link>
             <button

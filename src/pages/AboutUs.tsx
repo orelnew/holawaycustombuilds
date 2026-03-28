@@ -192,7 +192,7 @@ const AboutUs = () => {
               <p className="text-xl mb-8 text-cream/90">
                 Let us connect you with the perfect contractor for your  home improvement project
               </p>
-              <Link to="/sms-opt-in">
+              <Link to="/get-started">
                 <Button size="lg" className="bg-primary hover:bg-primary/90">
                   Get Started Today
                 </Button>

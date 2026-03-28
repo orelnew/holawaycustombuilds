@@ -58,7 +58,7 @@ const Footer = () => {
             <span>•</span>
             <Link to="/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</Link>
             <span>•</span>
-            <Link to="/sms-opt-in" className="hover:text-primary transition-colors">SMS Opt-In</Link>
+            <Link to="/get-started" className="hover:text-primary transition-colors">SMS Opt-In</Link>
           </div>
           <p className="mt-3 text-sm">Serving communities across the United States</p>
           <p className="mt-2 text-xs">Operated by Windflow Media LLC | 30 N Gould St Ste N, Sheridan, WY 82801</p>

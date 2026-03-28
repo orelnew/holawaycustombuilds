@@ -95,7 +95,7 @@ const App = () => (
           {/* Legal Pages */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
-          <Route path="/sms-opt-in" element={<SMSOptIn />} />
+          <Route path="/get-started" element={<SMSOptIn />} />
 
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

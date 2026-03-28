@@ -207,7 +207,7 @@ const WhyChooseUs = () => {
                 Join hundreds of the US homeowners who've found their perfect contractor through HomeProConnect
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link to="/sms-opt-in">
+                <Link to="/get-started">
                   <Button size="lg" className="bg-primary hover:bg-primary/90">
                     Get Started Free
                   </Button>

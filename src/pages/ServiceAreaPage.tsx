@@ -102,7 +102,7 @@ const ServiceAreaPage = () => {
               <p className="text-xl mb-8 text-cream/90">
                 Let us connect you with qualified contractors in your area
               </p>
-              <Link to="/sms-opt-in">
+              <Link to="/get-started">
                 <Button size="lg" className="bg-primary hover:bg-primary/90">
                   Get Started Free
                 </Button>

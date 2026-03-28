@@ -137,7 +137,7 @@ const WeatherMaintenance = () => {
                 <p className="mb-6">
                   Connect with trusted Your Area contractors who understand local weather challenges
                 </p>
-                <Link to="/sms-opt-in">
+                <Link to="/get-started">
                   <Button size="lg" className="bg-primary hover:bg-primary/90">
                     Get Started Today
                   </Button>

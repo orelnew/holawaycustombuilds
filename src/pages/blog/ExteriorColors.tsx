@@ -188,7 +188,7 @@ const ExteriorColors = () => {
                 <p className="mb-6">
                   Connect with trusted painting contractors
                 </p>
-                <Link to="/sms-opt-in">
+                <Link to="/get-started">
                   <Button size="lg" className="bg-primary hover:bg-primary/90">
                     Find a Painter Today
                   </Button>

@@ -142,7 +142,7 @@ const HowItWorks = () => {
                 Let us connect you with the perfect contractor for your  home improvement project
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link to="/sms-opt-in">
+                <Link to="/get-started">
                   <Button size="lg" className="bg-primary hover:bg-primary/90">
                     Get Your Free Consultation
                   </Button>

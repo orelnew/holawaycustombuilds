@@ -35,7 +35,7 @@ const Index = () => {
     { title: "Testimonials", icon: MessageSquare, path: "/testimonials", description: "Read homeowner reviews" },
     { title: "Service Area", icon: MapPin, path: "/service-area", description: "Cities we serve across the US" },
     { title: "FAQ", icon: HelpCircle, path: "/faq", description: "Get answers to common questions" },
-    { title: "Get Started", icon: FileText, path: "/sms-opt-in", description: "Free consultation signup" }
+    { title: "Get Started", icon: FileText, path: "/get-started", description: "Free consultation signup" }
   ];
 
   return (

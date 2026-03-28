@@ -111,7 +111,7 @@ const NWAKitchenTrends = () => {
               <div className="mt-12 p-8 bg-navy text-cream rounded-lg text-center">
                 <h3 className="text-2xl font-bold mb-4">Plan Your Kitchen Remodel</h3>
                 <p className="mb-6">Connect with trusted contractors today</p>
-                <Link to="/sms-opt-in">
+                <Link to="/get-started">
                   <Button size="lg" className="bg-primary hover:bg-primary/90">
                     Get Started
                   </Button>
