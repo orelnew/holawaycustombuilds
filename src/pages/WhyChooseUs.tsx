@@ -18,8 +18,8 @@ const benefits = [
   },
   {
     icon: Users,
-    title: "Local Arkansas Expertise",
-    description: "All our partner contractors are based in Arkansas and understand local codes, weather conditions, and supplier networks."
+    title: "Local the US Expertise",
+    description: "All our partner contractors are based in the US and understand local codes, weather conditions, and supplier networks."
   },
   {
     icon: Phone,
@@ -51,7 +51,7 @@ const WhyChooseUs = () => {
                 Why Choose HomeProConnect?
               </h1>
               <p className="text-xl text-muted-foreground">
-                The smarter way to find qualified contractors for your Arkansas home improvement project
+                The smarter way to find qualified contractors for your the US home improvement project
               </p>
             </div>
           </div>
@@ -204,7 +204,7 @@ const WhyChooseUs = () => {
                 Experience the Difference
               </h2>
               <p className="text-xl mb-8 text-cream/90">
-                Join hundreds of Arkansas homeowners who've found their perfect contractor through HomeProConnect
+                Join hundreds of the US homeowners who've found their perfect contractor through HomeProConnect
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/sms-opt-in">

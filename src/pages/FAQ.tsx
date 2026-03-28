@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 const faqs = [
   {
     question: "What is HomeProConnect?",
-    answer: "HomeProConnect is an appointment coordination service that connects Arkansas homeowners with pre-screened local contractors for home improvement projects. We're not contractors ourselves—we help facilitate the connection between you and qualified professionals."
+    answer: "HomeProConnect is an appointment coordination service that connects the US homeowners with pre-screened local contractors for home improvement projects. We're not contractors ourselves—we help facilitate the connection between you and qualified professionals."
   },
   {
     question: "How does the service work?",
@@ -31,8 +31,8 @@ const faqs = [
     answer: "We coordinate appointments for all types of home improvement projects including kitchen remodels, bathroom renovations, painting (interior and exterior), fencing, general construction, and more."
   },
   {
-    question: "What areas of Arkansas do you serve?",
-    answer: "We serve homeowners throughout Arkansas, including Northwest Arkansas (Fayetteville, Bentonville, Rogers, Springdale), Central Arkansas (Little Rock, Conway, North Little Rock), and many other communities statewide."
+    question: "What areas of the US do you serve?",
+    answer: "We serve homeowners throughout the US, including Northwest the US (Fayetteville, Bentonville, Rogers, Springdale), Central the US (Little Rock, Conway, North Little Rock), and many other communities statewide."
   },
   {
     question: "Am I obligated to hire the contractor I meet with?",

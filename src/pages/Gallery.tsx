@@ -19,7 +19,7 @@ const projects = [
     title: "Exterior Painting Project",
     category: "Painting",
     image: paintingImage,
-    description: "Full exterior repaint bringing new life to this Arkansas home"
+    description: "Full exterior repaint bringing new life to this home"
   },
   {
     title: "Custom Privacy Fence",
@@ -43,7 +43,7 @@ const projects = [
     title: "Deck Construction",
     category: "Construction",
     image: constructionImage,
-    description: "Custom deck build perfect for Arkansas outdoor living"
+    description: "Custom deck build perfect for outdoor living"
   },
 ];
 
@@ -60,7 +60,7 @@ const Gallery = () => {
                 Project Gallery
               </h1>
               <p className="text-xl text-muted-foreground">
-                See the quality work our partner contractors deliver across Arkansas
+                See the quality work our partner contractors deliver across the US
               </p>
             </div>
           </div>

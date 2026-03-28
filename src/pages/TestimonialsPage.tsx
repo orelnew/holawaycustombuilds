@@ -82,7 +82,7 @@ const TestimonialsPage = () => {
                 Homeowner Reviews
               </h1>
               <p className="text-xl text-muted-foreground">
-                See what Arkansas homeowners are saying about HomeProConnect
+                See what homeowners are saying about HomeProConnect
               </p>
             </div>
           </div>

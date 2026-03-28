@@ -152,7 +152,7 @@ const TermsOfService = () => {
                 <div>
                   <h2 className="text-2xl font-bold text-foreground mb-3">8. Intellectual Property</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    All content on homeproconnectarkansas.com — including text, logos, and design — is owned by Windflow Media LLC and protected by intellectual property laws.
+                    All content on this website — including text, logos, and design — is owned by Windflow Media LLC and protected by intellectual property laws.
                   </p>
                 </div>
 

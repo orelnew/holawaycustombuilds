@@ -95,7 +95,7 @@ const SMSOptIn = () => {
                 Get Your Free Home Improvement Consultation
               </h1>
               <p className="text-lg text-muted-foreground">
-                Join hundreds of Arkansas homeowners who've transformed their homes with our proven contractor matching system. Fill out the form below to get started.
+                Join hundreds of homeowners who've transformed their homes with our proven contractor matching system. Fill out the form below to get started.
               </p>
             </div>
           </div>
@@ -231,7 +231,7 @@ const SMSOptIn = () => {
                     {/* Trust Badges */}
                     <div className="text-center pt-4 border-t">
                       <p className="text-sm text-muted-foreground mb-3">
-                        Trusted by over 500+ Arkansas homeowners
+                        Trusted by over 500+ homeowners
                       </p>
                       <div className="flex flex-wrap justify-center gap-4 text-sm text-primary">
                         <span>✓ No Spam Guarantee</span>

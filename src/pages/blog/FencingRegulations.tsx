@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar } from "lucide-react";
 
-const ArkansasFencingRegulations = () => {
+const FencingRegulations = () => {
   return (
     <div className="min-h-screen">
       <Header />
@@ -42,4 +42,4 @@ const ArkansasFencingRegulations = () => {
     </div>
   );
 };
-export default ArkansasFencingRegulations;
+export default FencingRegulations;

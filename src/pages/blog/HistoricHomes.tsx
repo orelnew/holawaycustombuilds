@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar } from "lucide-react";
 
-const ArkansasHistoricHomes = () => {
+const HistoricHomes = () => {
   return (
     <div className="min-h-screen">
       <Header />
@@ -42,4 +42,4 @@ const ArkansasHistoricHomes = () => {
     </div>
   );
 };
-export default ArkansasHistoricHomes;
+export default HistoricHomes;

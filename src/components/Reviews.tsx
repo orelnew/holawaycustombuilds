@@ -53,7 +53,7 @@ const Reviews = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">What Homeowners Say</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Don't just take our word for it - hear from satisfied homeowners across Arkansas
+            Don't just take our word for it - hear from satisfied homeowners across the US
           </p>
         </div>
 

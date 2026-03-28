@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar } from "lucide-react";
 
-const ArkansasExteriorColors = () => {
+const ExteriorColors = () => {
   return (
     <div className="min-h-screen">
       <Header />
@@ -203,4 +203,4 @@ const ArkansasExteriorColors = () => {
   );
 };
 
-export default ArkansasExteriorColors;
+export default ExteriorColors;

@@ -5,16 +5,16 @@ import { Link } from "react-router-dom";
 
 const blogPosts = [
   {
-    title: "Top 5 Paint Colors for Arkansas Homes in 2025",
+    title: "Top 5 Paint Colors for Your Home in 2025",
     slug: "paint-colors-2025",
-    excerpt: "Discover the trending paint colors that perfectly complement the Arkansas Natural State aesthetic while keeping your home cool and stylish.",
+    excerpt: "Discover the trending paint colors that perfectly complement your home's aesthetic while keeping it cool and stylish.",
     date: "January 15, 2025",
     category: "Painting Tips"
   },
   {
     title: "Choosing the Right Fence for Your Property",
     slug: "choosing-right-fence",
-    excerpt: "A comprehensive guide to selecting the perfect fence material and style for your Austin-area home, balancing privacy, durability, and aesthetics.",
+    excerpt: "A comprehensive guide to selecting the perfect fence material and style for your home, balancing privacy, durability, and aesthetics.",
     date: "January 10, 2025",
     category: "Fencing Guide"
   },
@@ -26,16 +26,16 @@ const blogPosts = [
     category: "Remodeling"
   },
   {
-    title: "Essential Home Maintenance for Arkansas Weather",
+    title: "Essential Home Maintenance for Your Climate",
     slug: "home-maintenance-texas",
-    excerpt: "Protect your investment with our seasonal home maintenance checklist tailored for the Arkansas Natural State's unique climate challenges.",
+    excerpt: "Protect your investment with our seasonal home maintenance checklist tailored for your region's unique climate challenges.",
     date: "December 28, 2024",
     category: "Home Care"
   },
   {
     title: "Outdoor Living Space Trends for 2025",
     slug: "outdoor-living-trends-2025",
-    excerpt: "Discover the hottest outdoor living trends and how to create your perfect backyard oasis in the Arkansas.",
+    excerpt: "Discover the hottest outdoor living trends and how to create your perfect backyard oasis.",
     date: "December 20, 2024",
     category: "Outdoor Living"
   },

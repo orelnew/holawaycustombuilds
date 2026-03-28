@@ -17,7 +17,7 @@ const AboutUs = () => {
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
                 About HomeProConnect               </h1>
               <p className="text-xl text-muted-foreground">
-                Connecting Arkansas homeowners with trusted local contractors since day one
+                Connecting  homeowners with trusted local contractors since day one
               </p>
             </div>
           </div>
@@ -32,13 +32,13 @@ const AboutUs = () => {
                   <h2 className="text-3xl font-bold mb-6">Our Story</h2>
                   <div className="space-y-4 text-muted-foreground leading-relaxed">
                     <p>
-                      HomeProConnect Arkansas is an appointment coordination service that connects homeowners with trusted local contractors for kitchen remodels, bathroom renovations, and other home improvement projects.
+                      HomeProConnect  is an appointment coordination service that connects homeowners with trusted local contractors for kitchen remodels, bathroom renovations, and other home improvement projects.
                     </p>
                     <p>
-                      We partner with established, pre-screened contractors throughout Arkansas to help homeowners find the right professional for their project — without the hassle of endless phone calls and scheduling conflicts.
+                      We partner with established, pre-screened contractors throughout  to help homeowners find the right professional for their project — without the hassle of endless phone calls and scheduling conflicts.
                     </p>
                     <p>
-                      Our mission is simple: make it easy for Arkansas homeowners to connect with quality contractors who will bring their home improvement visions to life.
+                      Our mission is simple: make it easy for  homeowners to connect with quality contractors who will bring their home improvement visions to life.
                     </p>
                   </div>
                 </CardContent>
@@ -91,7 +91,7 @@ const AboutUs = () => {
                     <Target className="h-12 w-12 text-primary mb-4" />
                     <h3 className="text-xl font-semibold mb-2">Local Focus</h3>
                     <p className="text-muted-foreground">
-                      We exclusively work with Arkansas-based contractors who understand our communities and local building requirements.
+                      We exclusively work with -based contractors who understand our communities and local building requirements.
                     </p>
                   </CardContent>
                 </Card>
@@ -135,7 +135,7 @@ const AboutUs = () => {
               <Card>
                 <CardContent className="p-8">
                   <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
-                    HomeProConnect Arkansas partners with:
+                    HomeProConnect  partners with:
                   </p>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
@@ -163,7 +163,7 @@ const AboutUs = () => {
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl font-bold mb-6">A Service of Windflow Media LLC</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                HomeProConnect Arkansas is operated by Windflow Media LLC, a marketing and appointment coordination company based in the United States.
+                HomeProConnect  is operated by Windflow Media LLC, a marketing and appointment coordination company based in the United States.
               </p>
               <Card className="max-w-md mx-auto">
                 <CardContent className="p-6">
@@ -190,7 +190,7 @@ const AboutUs = () => {
                 Ready to Transform Your Home?
               </h2>
               <p className="text-xl mb-8 text-cream/90">
-                Let us connect you with the perfect contractor for your Arkansas home improvement project
+                Let us connect you with the perfect contractor for your  home improvement project
               </p>
               <Link to="/sms-opt-in">
                 <Button size="lg" className="bg-primary hover:bg-primary/90">

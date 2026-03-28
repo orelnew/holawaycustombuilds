@@ -211,7 +211,7 @@ const LeadFunnel = () => {
                   <Input
                     id="state"
                     type="text"
-                    placeholder="Arkansas"
+                    placeholder="TX"
                     value={formData.state}
                     onChange={(e) => setFormData({ ...formData, state: e.target.value })}
                     className="text-lg py-5"
