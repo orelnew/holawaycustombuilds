@@ -28,7 +28,6 @@ import HistoricHomes from "./pages/blog/HistoricHomes";
 // Other Pages
 import ContactPage from "./pages/ContactPage";
 import OurApproach from "./pages/OurApproach";
-import LeadFunnel from "./pages/LeadFunnel";
 import RoofingLeadFunnel from "./pages/RoofingLeadFunnel";
 import BookMeeting from "./pages/BookMeeting";
 
@@ -79,7 +78,6 @@ const App = () => (
           {/* Other Pages */}
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/our-approach" element={<OurApproach />} />
-          <Route path="/get-started" element={<LeadFunnel />} />
           <Route path="/roofing-estimate" element={<RoofingLeadFunnel />} />
           <Route path="/book-meeting" element={<BookMeeting />} />
 
