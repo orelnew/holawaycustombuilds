@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Card, CardContent } from "@/components/ui/card";
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { Link } from "react-router-dom";
@@ -31,7 +31,7 @@ const SMSOptIn = () => {
     register,
     handleSubmit,
     formState: { errors },
-    watch,
+    control,
   } = useForm<FormData>({
     resolver: zodResolver(formSchema),
   });
@@ -173,9 +173,16 @@ const SMSOptIn = () => {
 
                       {/* Transactional Messages Checkbox */}
                       <div className="flex items-start space-x-3 bg-background rounded-lg p-4">
-                        <Checkbox
-                          id="transactionalConsent"
-                          {...register("transactionalConsent")}
+                        <Controller
+                          name="transactionalConsent"
+                          control={control}
+                          render={({ field }) => (
+                            <Checkbox
+                              id="transactionalConsent"
+                              checked={field.value}
+                              onCheckedChange={field.onChange}
+                            />
+                          )}
                         />
                         <div className="grid gap-1.5 leading-none">
                           <label
@@ -189,9 +196,16 @@ const SMSOptIn = () => {
 
                       {/* Marketing Messages Checkbox */}
                       <div className="flex items-start space-x-3 bg-background rounded-lg p-4">
-                        <Checkbox
-                          id="marketingConsent"
-                          {...register("marketingConsent")}
+                        <Controller
+                          name="marketingConsent"
+                          control={control}
+                          render={({ field }) => (
+                            <Checkbox
+                              id="marketingConsent"
+                              checked={field.value}
+                              onCheckedChange={field.onChange}
+                            />
+                          )}
                         />
                         <div className="grid gap-1.5 leading-none">
                           <label
