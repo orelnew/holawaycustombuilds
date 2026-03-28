@@ -48,7 +48,7 @@ const faqs = [
   },
   {
     question: "Who do I contact if I have questions?",
-    answer: "You can reach us at orelnew@gmail.com or call 479-364-6865. We're here to help!"
+    answer: "You can reach us at support@homeproconnectarkansas.com or call 479-364-6865. We're here to help!"
   }
 ];
 

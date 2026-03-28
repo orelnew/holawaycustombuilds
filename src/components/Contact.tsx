@@ -29,8 +29,8 @@ const Contact = () => {
               <CardContent className="p-6 text-center">
                 <Mail className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="font-semibold text-lg mb-2 text-cream">Email Us</h3>
-                <a href="mailto:orelnew@gmail.com" className="text-primary hover:text-primary/80 transition-colors break-all">
-                  orelnew@gmail.com
+                <a href="mailto:support@homeproconnectarkansas.com" className="text-primary hover:text-primary/80 transition-colors break-all">
+                  support@homeproconnectarkansas.com
                 </a>
               </CardContent>
             </Card>
@@ -76,7 +76,7 @@ const Contact = () => {
               <Button
                 size="lg"
                 className="bg-cream text-navy hover:bg-cream/90 hover:text-navy"
-                onClick={() => window.location.href = 'mailto:orelnew@gmail.com'}
+                onClick={() => window.location.href = 'mailto:support@homeproconnectarkansas.com'}
               >
                 <Mail className="mr-2 h-5 w-5" />
                 Email Us

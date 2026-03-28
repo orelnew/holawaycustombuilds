@@ -102,7 +102,7 @@ const PrivacyPolicy = () => {
 
                   <h3 className="text-xl font-semibold text-foreground mt-4 mb-2">Help</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    For assistance, reply <strong>HELP</strong> to any message or contact us at orelnew@gmail.com.
+                    For assistance, reply <strong>HELP</strong> to any message or contact us at support@homeproconnectarkansas.com.
                   </p>
 
                   <h3 className="text-xl font-semibold text-foreground mt-4 mb-2">Consent Not Shared</h3>
@@ -150,7 +150,7 @@ const PrivacyPolicy = () => {
                     <li>Opt out of SMS communications</li>
                   </ul>
                   <p className="text-muted-foreground leading-relaxed mt-3">
-                    Contact us at orelnew@gmail.com to exercise these rights.
+                    Contact us at support@homeproconnectarkansas.com to exercise these rights.
                   </p>
                 </div>
 
@@ -178,7 +178,7 @@ const PrivacyPolicy = () => {
                     United States
                   </p>
                   <p className="text-muted-foreground leading-relaxed mt-3">
-                    <strong>Email:</strong> orelnew@gmail.com<br />
+                    <strong>Email:</strong> support@homeproconnectarkansas.com<br />
                     <strong>Phone:</strong> +1 (516) 288-9893
                   </p>
                 </div>
