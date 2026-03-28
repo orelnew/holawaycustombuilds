@@ -27,7 +27,7 @@ const Hero = () => {
             <h1 className="text-6xl md:text-8xl font-bold text-primary mb-2">
               HomeProConnect
             </h1>
-            <p className="text-cream/80 text-sm md:text-base font-medium">
+            <p className="text-cream/80 text-lg md:text-xl font-medium">
               A service of Windflow Media LLC
             </p>
           </div>
