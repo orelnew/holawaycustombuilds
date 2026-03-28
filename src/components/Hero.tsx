@@ -24,9 +24,12 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-32 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className="animate-in fade-in zoom-in duration-700">
-            <h1 className="text-6xl md:text-8xl font-bold text-primary mb-4">
+            <h1 className="text-6xl md:text-8xl font-bold text-primary mb-2">
               HomeProConnect
             </h1>
+            <p className="text-cream/80 text-sm md:text-base font-medium">
+              A service of Windflow Media LLC
+            </p>
           </div>
 
           <h2 className="text-4xl md:text-6xl font-bold text-cream animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100">
