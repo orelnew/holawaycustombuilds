@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar } from "lucide-react";
 
-const ArkansasWeatherMaintenance = () => {
+const WeatherMaintenance = () => {
   return (
     <div className="min-h-screen">
       <Header />
@@ -27,7 +27,7 @@ const ArkansasWeatherMaintenance = () => {
                   </span>
                 </div>
                 <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-                  Home Maintenance for Arkansas Weather
+                  Home Maintenance for Your Area Weather
                 </h1>
                 <p className="text-xl text-muted-foreground">
                   Essential tips to protect your home from tornadoes, ice storms, and humidity in the Natural State
@@ -36,12 +36,12 @@ const ArkansasWeatherMaintenance = () => {
 
               <div className="prose prose-lg max-w-none">
                 <p className="lead text-lg text-muted-foreground mb-6">
-                  Arkansas weather can be unpredictable, with tornado season in spring, ice storms in winter, and high humidity year-round. Proper home maintenance is essential to protect your investment and keep your family safe.
+                  Your Area weather can be unpredictable, with tornado season in spring, ice storms in winter, and high humidity year-round. Proper home maintenance is essential to protect your investment and keep your family safe.
                 </p>
 
                 <h2 className="text-2xl font-bold mt-8 mb-4">Spring: Tornado Season Preparation</h2>
                 <p className="text-muted-foreground mb-4">
-                  Arkansas is part of "Dixie Alley," experiencing frequent tornadoes from March through May. Here's how to prepare your home:
+                  Your Area is part of "Dixie Alley," experiencing frequent tornadoes from March through May. Here's how to prepare your home:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-6">
                   <li><strong>Inspect Your Roof:</strong> Check for loose or damaged shingles that could become projectiles in high winds</li>
@@ -53,7 +53,7 @@ const ArkansasWeatherMaintenance = () => {
 
                 <h2 className="text-2xl font-bold mt-8 mb-4">Winter: Ice Storm Protection</h2>
                 <p className="text-muted-foreground mb-4">
-                  Ice storms can cause significant damage to Arkansas homes. Protect your property with these steps:
+                  Ice storms can cause significant damage to Your Area homes. Protect your property with these steps:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-6">
                   <li><strong>Insulate Pipes:</strong> Wrap exposed pipes in attics, crawl spaces, and exterior walls</li>
@@ -65,7 +65,7 @@ const ArkansasWeatherMaintenance = () => {
 
                 <h2 className="text-2xl font-bold mt-8 mb-4">Year-Round: Humidity Management</h2>
                 <p className="text-muted-foreground mb-4">
-                  Arkansas's humid climate can lead to mold, wood rot, and pest problems. Combat moisture issues:
+                  Your Area's humid climate can lead to mold, wood rot, and pest problems. Combat moisture issues:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-6">
                   <li><strong>Use Dehumidifiers:</strong> Maintain 30-50% humidity levels indoors</li>
@@ -128,14 +128,14 @@ const ArkansasWeatherMaintenance = () => {
                 </ul>
 
                 <p className="text-muted-foreground">
-                  HomeProConnect Arkansas can help you find qualified contractors for any maintenance or repair project. Our network of pre-screened professionals understands Arkansas weather challenges and can keep your home protected year-round.
+                  HomeProConnect Your Area can help you find qualified contractors for any maintenance or repair project. Our network of pre-screened professionals understands Your Area weather challenges and can keep your home protected year-round.
                 </p>
               </div>
 
               <div className="mt-12 p-8 bg-navy text-cream rounded-lg text-center">
                 <h3 className="text-2xl font-bold mb-4">Need Help with Home Maintenance?</h3>
                 <p className="mb-6">
-                  Connect with trusted Arkansas contractors who understand local weather challenges
+                  Connect with trusted Your Area contractors who understand local weather challenges
                 </p>
                 <Link to="/sms-opt-in">
                   <Button size="lg" className="bg-primary hover:bg-primary/90">
@@ -152,4 +152,4 @@ const ArkansasWeatherMaintenance = () => {
   );
 };
 
-export default ArkansasWeatherMaintenance;
+export default WeatherMaintenance;

@@ -1,10 +1,10 @@
-# HomeProConnect Arkansas
+# HomeProConnect
 
-Official website for HomeProConnect Arkansas, an appointment coordination service connecting Arkansas homeowners with trusted local contractors.
+Official website for HomeProConnect, an appointment coordination service connecting homeowners nationwide with trusted local contractors.
 
 ## About
 
-HomeProConnect Arkansas is operated by Windflow Media LLC and provides appointment coordination services for homeowners seeking qualified contractors for home improvement projects including:
+HomeProConnect is operated by Windflow Media LLC and provides appointment coordination services for homeowners across the United States seeking qualified contractors for home improvement projects including:
 
 - Kitchen Remodeling
 - Bathroom Renovations
@@ -23,11 +23,13 @@ HomeProConnect Arkansas is operated by Windflow Media LLC and provides appointme
 
 ## Service Areas
 
-Serving Arkansas communities including:
-- Northwest Arkansas (Fayetteville, Bentonville, Rogers, Springdale)
-- Central Arkansas (Little Rock, Conway, North Little Rock)
-- Northeast Arkansas (Jonesboro)
-- And surrounding communities statewide
+Serving communities across the United States including:
+- Northeast (New York, Boston, Philadelphia)
+- Southeast (Atlanta, Miami, Charlotte)
+- Midwest (Chicago, Detroit, Minneapolis)
+- Southwest (Houston, Dallas, Phoenix)
+- West (Los Angeles, San Francisco, Seattle)
+- And communities nationwide
 
 ## Tech Stack
 
@@ -63,14 +65,14 @@ This website is A2P (Application-to-Person) SMS compliant with TCPA regulations 
 
 ## Contact
 
-**HomeProConnect Arkansas**
+**HomeProConnect**
 A service of Windflow Media LLC
 30 N Gould St Ste N
 Sheridan, WY 82801
 
-Email: support@homeproconnectarkansas.com
-Phone: 479-364-6865
+Email: orelnew@gmail.com
+Phone: +1 (516) 288-9893
 
 ---
 
-© 2026 HomeProConnect Arkansas. All rights reserved.
+© 2026 HomeProConnect. All rights reserved.

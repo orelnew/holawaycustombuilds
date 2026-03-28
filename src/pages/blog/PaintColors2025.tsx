@@ -24,7 +24,7 @@ const PaintColors2025 = () => {
               </div>
 
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-                Top 5 Paint Colors for Arkansas Homes in 2025
+                Top 5 Paint Colors for Your Home in 2025
               </h1>
 
               <div className="flex items-center text-muted-foreground mb-8">
@@ -34,12 +34,12 @@ const PaintColors2025 = () => {
 
               <div className="prose prose-lg max-w-none">
                 <p className="text-xl text-muted-foreground mb-8">
-                  Discover the trending paint colors that perfectly complement the Arkansas Natural State aesthetic while keeping your home cool and stylish.
+                  Discover the trending paint colors that perfectly complement modern aesthetics while keeping your home cool and stylish.
                 </p>
 
                 <h2 className="text-3xl font-bold text-foreground mt-8 mb-4">1. Desert Sand</h2>
                 <p className="text-foreground/80 mb-4">
-                  This warm, neutral beige continues to dominate Arkansas homes in 2025. Desert Sand reflects heat beautifully, helping keep your home cooler during those scorching summer months. It pairs exceptionally well with natural stone accents and wooden features common in Natural State architecture.
+                  This warm, neutral beige continues to dominate homes in 2025. Desert Sand reflects heat beautifully, helping keep your home cooler during those scorching summer months. It pairs exceptionally well with natural stone accents and wooden features.
                 </p>
                 <p className="text-foreground/80 mb-6">
                   <strong>Best for:</strong> Exterior walls, living rooms, and open-concept spaces
@@ -47,7 +47,7 @@ const PaintColors2025 = () => {
 
                 <h2 className="text-3xl font-bold text-foreground mt-8 mb-4">2. Sage Green</h2>
                 <p className="text-foreground/80 mb-4">
-                  Inspired by the Arkansas landscape, sage green brings a calming, organic feel to any space. This versatile color works beautifully in both modern and traditional homes, creating a connection between indoor and outdoor living spaces.
+                  Inspired by natural landscapes, sage green brings a calming, organic feel to any space. This versatile color works beautifully in both modern and traditional homes, creating a connection between indoor and outdoor living spaces.
                 </p>
                 <p className="text-foreground/80 mb-6">
                   <strong>Best for:</strong> Accent walls, bedrooms, and bathrooms
@@ -55,7 +55,7 @@ const PaintColors2025 = () => {
 
                 <h2 className="text-3xl font-bold text-foreground mt-8 mb-4">3. Terracotta Sunset</h2>
                 <p className="text-foreground/80 mb-4">
-                  Bold yet warm, terracotta-inspired hues are making a major comeback. These rich orange-red tones capture the essence of Arkansas sunsets and complement the earthy tones of Natural State homes. Use sparingly for maximum impact.
+                  Bold yet warm, terracotta-inspired hues are making a major comeback. These rich orange-red tones capture the essence of beautiful sunsets and complement earthy tones. Use sparingly for maximum impact.
                 </p>
                 <p className="text-foreground/80 mb-6">
                   <strong>Best for:</strong> Accent walls, front doors, and outdoor living spaces
@@ -63,7 +63,7 @@ const PaintColors2025 = () => {
 
                 <h2 className="text-3xl font-bold text-foreground mt-8 mb-4">4. Soft Limestone</h2>
                 <p className="text-foreground/80 mb-4">
-                  Paying homage to the native Arkansas limestone, this soft gray with warm undertones provides a sophisticated, timeless look. It's perfect for creating a bright, airy feel while maintaining that distinctly Texan character.
+                  This soft gray with warm undertones provides a sophisticated, timeless look. It's perfect for creating a bright, airy feel with classic character.
                 </p>
                 <p className="text-foreground/80 mb-6">
                   <strong>Best for:</strong> Whole home exterior, kitchens, and bathrooms
@@ -71,7 +71,7 @@ const PaintColors2025 = () => {
 
                 <h2 className="text-3xl font-bold text-foreground mt-8 mb-4">5. Deep Creek Blue</h2>
                 <p className="text-foreground/80 mb-4">
-                  This rich, navy-inspired blue adds depth and sophistication to any space. It works particularly well in bedrooms and home offices, creating a focused, tranquil environment. Pair with warm wood tones and brass fixtures for a modern Arkansas look.
+                  This rich, navy-inspired blue adds depth and sophistication to any space. It works particularly well in bedrooms and home offices, creating a focused, tranquil environment. Pair with warm wood tones and brass fixtures for a modern look.
                 </p>
                 <p className="text-foreground/80 mb-6">
                   <strong>Best for:</strong> Bedrooms, home offices, and front doors
@@ -89,7 +89,7 @@ const PaintColors2025 = () => {
                 <div className="bg-card border-2 border-primary/20 rounded-lg p-8 my-8">
                   <h3 className="text-2xl font-bold text-foreground mb-4">Ready to Transform Your Home?</h3>
                   <p className="text-muted-foreground mb-6">
-                    Our expert team can help you choose the perfect colors and provide professional painting services throughout the Austin and Natural State area.
+                    Our expert team can help you choose the perfect colors and provide professional painting services.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Button size="lg" onClick={() => window.location.href = 'tel:+14793646865'}>

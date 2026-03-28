@@ -27,7 +27,6 @@ const Hero = () => {
             <h1 className="text-6xl md:text-8xl font-bold text-primary mb-4">
               HomeProConnect
             </h1>
-            <p className="text-2xl md:text-3xl font-semibold text-cream">Arkansas</p>
           </div>
 
           <h2 className="text-4xl md:text-6xl font-bold text-cream animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100">
@@ -36,7 +35,7 @@ const Hero = () => {
           </h2>
 
           <p className="text-xl md:text-2xl text-cream/90 max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">
-            We help coordinate appointments between Arkansas homeowners and pre-screened home improvement professionals in your area
+            We help coordinate appointments between homeowners and pre-screened home improvement professionals in your area
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">

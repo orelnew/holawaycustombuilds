@@ -9,7 +9,7 @@ const services = [
   {
     title: "Painting Projects",
     slug: "painting",
-    description: "We connect you with skilled painting contractors for interior and exterior projects throughout Arkansas.",
+    description: "We connect you with skilled painting contractors for interior and exterior projects.",
     image: paintingImage,
     features: ["Interior Painting", "Exterior Painting", "Color Consultation", "Surface Preparation"]
   },
@@ -43,7 +43,7 @@ const Services = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Project Types We Help Coordinate</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Connecting Arkansas homeowners with qualified contractors for all types of home improvement projects
+            Connecting homeowners with qualified contractors for all types of home improvement projects
           </p>
         </div>
 

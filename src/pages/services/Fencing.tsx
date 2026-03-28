@@ -28,7 +28,7 @@ const Fencing = () => {
                   Custom Fencing Solutions
                 </h1>
                 <p className="text-xl text-muted-foreground mb-8">
-                  Secure and beautify your property with durable, attractive fencing solutions. From wood to chain link, we install and repair all types of fences across the Arkansas.
+                  Secure and beautify your property with durable, attractive fencing solutions. From wood to chain link, we connect you with contractors who install and repair all types of fences.
                 </p>
                 <div className="flex gap-4">
                   <Button size="lg" onClick={scrollToContact} className="bg-primary hover:bg-primary/90">
@@ -156,7 +156,7 @@ const Fencing = () => {
                 {[
                   {
                     title: "Quality Materials",
-                    description: "We source durable, weather-resistant materials built to last in the Arkansas climate."
+                    description: "We source durable, weather-resistant materials built to last in any climate."
                   },
                   {
                     title: "Expert Installation",

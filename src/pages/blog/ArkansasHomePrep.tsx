@@ -22,15 +22,15 @@ const ArkansasHomePrep = () => {
                   <span>•</span>
                   <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium">Home Sales</span>
                 </div>
-                <h1 className="text-4xl md:text-5xl font-bold mb-4">Preparing Your Arkansas Home for Sale</h1>
+                <h1 className="text-4xl md:text-5xl font-bold mb-4">Preparing Your Home for Sale</h1>
                 <p className="text-xl text-muted-foreground">High-ROI improvements that attract buyers fast</p>
               </header>
               <div className="prose prose-lg max-w-none space-y-6 text-muted-foreground">
-                <p>Selling your Arkansas home? Focus on these high-impact improvements for maximum return on investment.</p>
+                <p>Selling your home? Focus on these high-impact improvements for maximum return on investment.</p>
                 <h2 className="text-2xl font-bold text-foreground">Fresh Paint</h2>
                 <p>Interior painting returns 107% ROI on average. Stick with neutral colors like warm grays and soft whites.</p>
                 <h2 className="text-2xl font-bold text-foreground">Curb Appeal</h2>
-                <p>Arkansas buyers form first impressions in seconds. Clean gutters, trim landscaping, and fresh mulch make huge differences.</p>
+                <p>Buyers form first impressions in seconds. Clean gutters, trim landscaping, and fresh mulch make huge differences.</p>
                 <h2 className="text-2xl font-bold text-foreground">Kitchen Updates</h2>
                 <p>Minor kitchen updates like new hardware, lighting, and backsplash can yield 80%+ ROI without major renovation costs.</p>
               </div>

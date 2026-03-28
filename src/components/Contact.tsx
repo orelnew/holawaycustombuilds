@@ -40,20 +40,20 @@ const Contact = () => {
                 <MapPin className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="font-semibold text-lg mb-2 text-cream">Service Area</h3>
                 <p className="text-cream/80">
-                  Serving Arkansas Statewide
+                  Serving the US Nationwide
                   <br />
-                  <span className="text-sm">Little Rock, Fayetteville & Beyond</span>
+                  <span className="text-sm">Coast to Coast</span>
                 </p>
               </CardContent>
             </Card>
           </div>
 
           <div className="bg-background/10 backdrop-blur-sm rounded-lg p-8 border border-primary/20 text-center">
-            <h3 className="text-2xl font-bold mb-4 text-cream">Why Choose HomeProConnect Arkansas?</h3>
+            <h3 className="text-2xl font-bold mb-4 text-cream">Why Choose HomeProConnect?</h3>
             <div className="grid md:grid-cols-3 gap-6 mb-6">
               <div>
                 <p className="text-3xl font-bold text-primary mb-2">Local</p>
-                <p className="text-cream/80">Arkansas Contractors</p>
+                <p className="text-cream/80">Contractors Nationwide</p>
               </div>
               <div>
                 <p className="text-3xl font-bold text-primary mb-2">Pre-Screened</p>

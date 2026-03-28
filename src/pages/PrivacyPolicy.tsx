@@ -10,7 +10,7 @@ const PrivacyPolicy = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Privacy Policy</h1>
-              <p className="text-lg text-muted-foreground mb-2">HomeProConnect Arkansas</p>
+              <p className="text-lg text-muted-foreground mb-2">HomeProConnect</p>
               <p className="text-sm text-muted-foreground">A service of Windflow Media LLC</p>
               <div className="mt-4 space-y-1 text-sm text-muted-foreground">
                 <p><strong>Effective Date:</strong> March 2026</p>
@@ -28,7 +28,7 @@ const PrivacyPolicy = () => {
                 <div>
                   <h2 className="text-2xl font-bold text-foreground mb-3">1. Introduction</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    HomeProConnect Arkansas ("HomeProConnect," "we," "us," or "our") is an appointment coordination service operated by Windflow Media LLC. We connect homeowners with local home improvement contractors.
+                    HomeProConnect ("HomeProConnect," "we," "us," or "our") is an appointment coordination service operated by Windflow Media LLC. We connect homeowners with local home improvement contractors.
                   </p>
                   <p className="text-muted-foreground leading-relaxed mt-3">
                     This Privacy Policy explains how we collect, use, and protect your information when you submit an inquiry, visit our website, or receive communications from us.
@@ -69,7 +69,7 @@ const PrivacyPolicy = () => {
 
                   <h3 className="text-xl font-semibold text-foreground mt-4 mb-2">How You Opt In</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    When you submit an inquiry through a contractor's lead form or our website, you consent to receive SMS messages from HomeProConnect Arkansas regarding your home improvement inquiry.
+                    When you submit an inquiry through a contractor's lead form or our website, you consent to receive SMS messages from HomeProConnect regarding your home improvement inquiry.
                   </p>
 
                   <h3 className="text-xl font-semibold text-foreground mt-4 mb-2">Types of Messages</h3>
@@ -82,7 +82,7 @@ const PrivacyPolicy = () => {
 
                   <h3 className="text-xl font-semibold text-foreground mt-4 mb-2">Who Sends Messages</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Messages are sent by HomeProConnect Arkansas on behalf of local contractors in our network. Messages will identify both the contractor and HomeProConnect.
+                    Messages are sent by HomeProConnect on behalf of local contractors in our network. Messages will identify both the contractor and HomeProConnect.
                   </p>
 
                   <h3 className="text-xl font-semibold text-foreground mt-4 mb-2">Message Frequency</h3>
@@ -107,22 +107,13 @@ const PrivacyPolicy = () => {
 
                   <h3 className="text-xl font-semibold text-foreground mt-4 mb-2">Consent Not Shared</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Your SMS consent and phone number will <strong>not be sold or shared with third parties</strong> for their marketing purposes. We only share your contact information with:
+                    Your SMS consent and phone number will <strong>not be sold or shared with third parties</strong> for their marketing purposes.
                   </p>
-                  <ul className="list-disc pl-6 space-y-2 text-muted-foreground mt-2">
-                    <li>The specific contractor(s) relevant to your inquiry</li>
-                    <li>Our SMS service providers who deliver messages on our behalf</li>
-                  </ul>
                 </div>
 
                 <div>
                   <h2 className="text-2xl font-bold text-foreground mb-3">5. Information Sharing</h2>
                   <p className="text-muted-foreground leading-relaxed mb-2">We share your information with:</p>
-
-                  <h3 className="text-xl font-semibold text-foreground mt-4 mb-2">Partner Contractors</h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Your project inquiry is shared with qualified local contractors who may be a fit for your project. This is the core purpose of our service.
-                  </p>
 
                   <h3 className="text-xl font-semibold text-foreground mt-4 mb-2">Service Providers</h3>
                   <p className="text-muted-foreground leading-relaxed">
@@ -180,7 +171,7 @@ const PrivacyPolicy = () => {
                 <div>
                   <h2 className="text-2xl font-bold text-foreground mb-3">11. Contact Us</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    <strong>HomeProConnect Arkansas</strong><br />
+                    <strong>HomeProConnect</strong><br />
                     Operated by Windflow Media LLC<br />
                     30 N Gould St Ste N<br />
                     Sheridan, WY 82801<br />

@@ -14,7 +14,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
             <div>
-              <h1 className="font-bold text-xl text-primary">HomeProConnect Arkansas</h1>
+              <h1 className="font-bold text-xl text-primary">HomeProConnect</h1>
               <p className="text-xs text-foreground/60 hidden sm:block">Connecting Homeowners with Trusted Contractors</p>
             </div>
           </Link>

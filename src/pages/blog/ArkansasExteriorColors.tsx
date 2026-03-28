@@ -27,24 +27,24 @@ const ArkansasExteriorColors = () => {
                   </span>
                 </div>
                 <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-                  Best Exterior Paint Colors for Arkansas Homes
+                  Best Exterior Paint Colors for Your Home
                 </h1>
                 <p className="text-xl text-muted-foreground">
-                  Climate-appropriate colors that boost curb appeal and resale value in the Natural State
+                  Climate-appropriate colors that boost curb appeal and resale value
                 </p>
               </header>
 
               <div className="prose prose-lg max-w-none">
                 <p className="lead text-lg text-muted-foreground mb-6">
-                  Choosing the right exterior paint color for your Arkansas home means considering climate, architecture, and neighborhood aesthetics. Here are the top color choices that work beautifully in our state.
+                  Choosing the right exterior paint color for your home means considering climate, architecture, and neighborhood aesthetics. Here are the top color choices that work beautifully for any region.
                 </p>
 
-                <h2 className="text-2xl font-bold mt-8 mb-4">1. Warm Neutrals: The Arkansas Classic</h2>
+                <h2 className="text-2xl font-bold mt-8 mb-4">1. Warm Neutrals: The Timeless Classic</h2>
                 <p className="text-muted-foreground mb-4">
                   <strong>Colors:</strong> Warm beige, sandy tan, soft taupe
                 </p>
                 <p className="text-muted-foreground mb-4">
-                  Warm neutral tones are incredibly popular across Arkansas for good reason:
+                  Warm neutral tones are incredibly popular for good reason:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-6">
                   <li>Complement the natural landscape of forests and rolling hills</li>
@@ -54,7 +54,7 @@ const ArkansasExteriorColors = () => {
                   <li>Pair well with stone, brick, and wood accents</li>
                 </ul>
                 <p className="text-muted-foreground mb-6">
-                  <strong>Best for:</strong> Ranch homes, craftsman bungalows, farmhouses in Northwest Arkansas and Central Arkansas
+                  <strong>Best for:</strong> Ranch homes, craftsman bungalows, and farmhouses
                 </p>
 
                 <h2 className="text-2xl font-bold mt-8 mb-4">2. Soft Grays: Modern & Sophisticated</h2>
@@ -62,7 +62,7 @@ const ArkansasExteriorColors = () => {
                   <strong>Colors:</strong> Warm gray, greige, light charcoal
                 </p>
                 <p className="text-muted-foreground mb-4">
-                  Gray exteriors have surged in popularity, especially in Bentonville, Rogers, and Little Rock:
+                  Gray exteriors have surged in popularity across the country:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-6">
                   <li>Provide a contemporary, upscale look</li>
@@ -83,14 +83,14 @@ const ArkansasExteriorColors = () => {
                   White remains timeless and elegant:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-6">
-                  <li>Reflects heat in Arkansas summers, potentially lowering cooling costs</li>
+                  <li>Reflects heat in summer, potentially lowering cooling costs</li>
                   <li>Makes homes appear larger and more inviting</li>
-                  <li>Traditional Southern aesthetic</li>
+                  <li>Classic, timeless aesthetic</li>
                   <li>Requires more frequent cleaning due to pollen and dirt</li>
                   <li>Pairs beautifully with black or dark green shutters</li>
                 </ul>
                 <p className="text-muted-foreground mb-6">
-                  <strong>Best for:</strong> Colonial, Greek Revival, Southern traditional homes, historic districts
+                  <strong>Best for:</strong> Colonial, Greek Revival, traditional homes, historic districts
                 </p>
 
                 <h2 className="text-2xl font-bold mt-8 mb-4">4. Earthy Greens: Natural & Calming</h2>
@@ -98,14 +98,14 @@ const ArkansasExteriorColors = () => {
                   <strong>Colors:</strong> Sage green, olive, forest green accents
                 </p>
                 <p className="text-muted-foreground mb-4">
-                  Green exteriors blend beautifully with Arkansas's natural environment:
+                  Green exteriors blend beautifully with natural environments:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-6">
                   <li>Harmonize with wooded lots and mountain views</li>
                   <li>Trending in eco-conscious communities</li>
                   <li>Work well as full-home color or accent</li>
                   <li>Pair wonderfully with natural wood and stone</li>
-                  <li>Particularly popular in Ozark communities</li>
+                  <li>Particularly popular in rural and mountain communities</li>
                 </ul>
                 <p className="text-muted-foreground mb-6">
                   <strong>Best for:</strong> Cabin-style homes, mountain properties, wooded lots, cottages
@@ -122,14 +122,14 @@ const ArkansasExteriorColors = () => {
                   <li>Stand out in neighborhoods without being loud</li>
                   <li>Evoke calm and trust</li>
                   <li>Work beautifully with white trim and brass hardware</li>
-                  <li>Popular in historic areas like downtown Fayetteville</li>
+                  <li>Popular in historic areas and downtown districts</li>
                   <li>Resist fading in sun better than some other colors</li>
                 </ul>
                 <p className="text-muted-foreground mb-6">
                   <strong>Best for:</strong> Victorian homes, historic districts, lakefront properties, cottage-style homes
                 </p>
 
-                <h2 className="text-2xl font-bold mt-8 mb-4">Arkansas-Specific Considerations</h2>
+                <h2 className="text-2xl font-bold mt-8 mb-4">Important Considerations</h2>
 
                 <h3 className="text-xl font-semibold mt-6 mb-3">Climate Factors</h3>
                 <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-6">
@@ -141,15 +141,15 @@ const ArkansasExteriorColors = () => {
 
                 <h3 className="text-xl font-semibold mt-6 mb-3">Regional Preferences</h3>
                 <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-6">
-                  <li><strong>Northwest Arkansas:</strong> Modern grays and whites dominate new construction</li>
-                  <li><strong>Little Rock:</strong> Mix of traditional neutrals and contemporary colors</li>
-                  <li><strong>Ozark Region:</strong> Natural greens and earthy tones</li>
-                  <li><strong>Delta Region:</strong> Classic whites and warm neutrals</li>
+                  <li><strong>Urban Areas:</strong> Modern grays and whites dominate new construction</li>
+                  <li><strong>Suburban Areas:</strong> Mix of traditional neutrals and contemporary colors</li>
+                  <li><strong>Mountain Regions:</strong> Natural greens and earthy tones</li>
+                  <li><strong>Rural Areas:</strong> Classic whites and warm neutrals</li>
                 </ul>
 
                 <h2 className="text-2xl font-bold mt-8 mb-4">Color Combinations That Work</h2>
                 <div className="bg-muted/50 p-6 rounded-lg mb-6">
-                  <h3 className="font-semibold mb-3">Popular Arkansas Combinations:</h3>
+                  <h3 className="font-semibold mb-3">Popular Color Combinations:</h3>
                   <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                     <li>Warm gray body + white trim + black accents</li>
                     <li>Soft beige + cream trim + wood tones</li>
@@ -174,19 +174,19 @@ const ArkansasExteriorColors = () => {
                 <div className="bg-primary/10 border-l-4 border-primary p-6 my-8">
                   <h3 className="text-xl font-semibold mb-2">Professional Tip</h3>
                   <p className="text-muted-foreground">
-                    Always test paint samples on your actual home exterior. Colors look different in Arkansas's varied lighting conditions throughout the day. Test on multiple sides of your home and observe for at least a week before committing.
+                    Always test paint samples on your actual home exterior. Colors look different in varied lighting conditions throughout the day. Test on multiple sides of your home and observe for at least a week before committing.
                   </p>
                 </div>
 
                 <p className="text-muted-foreground">
-                  Ready to refresh your home's exterior? HomeProConnect Arkansas can connect you with experienced painting contractors who understand local climate challenges and color trends.
+                  Ready to refresh your home's exterior? HomeProConnect can connect you with experienced painting contractors who understand local climate challenges and color trends.
                 </p>
               </div>
 
               <div className="mt-12 p-8 bg-navy text-cream rounded-lg text-center">
                 <h3 className="text-2xl font-bold mb-4">Ready to Paint Your Home?</h3>
                 <p className="mb-6">
-                  Connect with trusted Arkansas painting contractors
+                  Connect with trusted painting contractors
                 </p>
                 <Link to="/sms-opt-in">
                   <Button size="lg" className="bg-primary hover:bg-primary/90">

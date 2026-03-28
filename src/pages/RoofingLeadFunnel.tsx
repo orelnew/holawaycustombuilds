@@ -555,7 +555,7 @@ const RoofingLeadFunnel = () => {
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
           <div className="mb-4 animate-in fade-in zoom-in duration-500">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-2">
-              HomeProConnect Arkansas
+              HomeProConnect
             </h1>
             <p className="text-sm text-cream/80">Connecting Homeowners with Trusted Contractors</p>
           </div>

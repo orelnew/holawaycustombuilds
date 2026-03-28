@@ -33,7 +33,7 @@ const Index = () => {
     { title: "Why Choose Us", icon: Star, path: "/why-choose-us", description: "See what makes us different" },
     { title: "Gallery", icon: Images, path: "/gallery", description: "View completed projects" },
     { title: "Testimonials", icon: MessageSquare, path: "/testimonials", description: "Read homeowner reviews" },
-    { title: "Service Area", icon: MapPin, path: "/service-area", description: "Cities we serve in Arkansas" },
+    { title: "Service Area", icon: MapPin, path: "/service-area", description: "Cities we serve across the US" },
     { title: "FAQ", icon: HelpCircle, path: "/faq", description: "Get answers to common questions" },
     { title: "Get Started", icon: FileText, path: "/sms-opt-in", description: "Free consultation signup" }
   ];
@@ -49,7 +49,7 @@ const Index = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Explore HomeProConnect Arkansas
+                Explore HomeProConnect
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 Everything you need to know about connecting with trusted contractors

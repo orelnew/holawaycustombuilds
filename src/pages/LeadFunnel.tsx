@@ -500,7 +500,7 @@ const LeadFunnel = () => {
           <div className="flex flex-col items-center space-y-4">
             <div className="space-y-2">
               <h1 className="text-4xl md:text-5xl font-bold text-primary">
-                HomeProConnect Arkansas
+                HomeProConnect
               </h1>
               <p className="text-sm text-gray-600">Connecting Homeowners with Trusted Contractors</p>
             </div>
@@ -521,7 +521,7 @@ const LeadFunnel = () => {
             <p className="text-lg font-semibold text-gray-800 text-center">See what homeowners are saying:</p>
             <div className="w-full rounded-xl overflow-hidden border border-gray-200 shadow-sm">
               <iframe
-                title="HomeProConnect Arkansas Reviews"
+                title="HomeProConnect Reviews"
                 src="https://player.vimeo.com/video/1160786568"
                 className="w-full"
                 style={{ aspectRatio: '16/9' }}
@@ -616,7 +616,7 @@ const LeadFunnel = () => {
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
           <div className="mb-4 animate-in fade-in zoom-in duration-500">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-2">
-              HomeProConnect Arkansas
+              HomeProConnect
             </h1>
             <p className="text-sm text-cream/80">Connecting Homeowners with Trusted Contractors</p>
           </div>

@@ -7,28 +7,28 @@ import { MapPin } from "lucide-react";
 
 const regions = [
   {
-    name: "Northwest Arkansas",
-    cities: ["Fayetteville", "Bentonville", "Rogers", "Springdale", "Bella Vista", "Siloam Springs"]
+    name: "Northeast",
+    cities: ["New York City", "Boston", "Philadelphia", "Pittsburgh", "Portland ME", "Buffalo"]
   },
   {
-    name: "Central Arkansas",
-    cities: ["Little Rock", "North Little Rock", "Conway", "Benton", "Bryant", "Sherwood"]
+    name: "Southeast",
+    cities: ["Atlanta", "Miami", "Charlotte", "Nashville", "Orlando", "Tampa"]
   },
   {
-    name: "Northeast Arkansas",
-    cities: ["Jonesboro", "Paragould", "Blytheville"]
+    name: "Midwest",
+    cities: ["Chicago", "Detroit", "Minneapolis", "St. Louis", "Cleveland", "Indianapolis"]
   },
   {
-    name: "Southwest Arkansas",
-    cities: ["Hot Springs", "Arkadelphia", "Texarkana"]
+    name: "Southwest",
+    cities: ["Houston", "Dallas", "Austin", "San Antonio", "Phoenix", "Albuquerque"]
   },
   {
-    name: "Southeast Arkansas",
-    cities: ["Pine Bluff", "El Dorado"]
+    name: "West",
+    cities: ["Los Angeles", "San Francisco", "Seattle", "Portland OR", "San Diego", "Las Vegas"]
   },
   {
-    name: "Western Arkansas",
-    cities: ["Fort Smith", "Russellville", "Van Buren"]
+    name: "Mountain",
+    cities: ["Denver", "Salt Lake City", "Boise", "Colorado Springs", "Reno", "Billings"]
   }
 ];
 
@@ -46,7 +46,7 @@ const ServiceAreaPage = () => {
                 Where We Serve
               </h1>
               <p className="text-xl text-muted-foreground">
-                Connecting homeowners with trusted contractors throughout the Natural State
+                Connecting homeowners with trusted contractors throughout the United States
               </p>
             </div>
           </div>
@@ -83,7 +83,7 @@ const ServiceAreaPage = () => {
             <div className="max-w-2xl mx-auto text-center">
               <h2 className="text-3xl font-bold mb-4">Don't See Your City?</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                We're constantly expanding our contractor network across Arkansas. Even if your city isn't listed, we may still be able to help!
+                We're constantly expanding our contractor network across the United States. Even if your city isn't listed, we may still be able to help!
               </p>
               <Link to="/contact">
                 <Button size="lg">Contact Us</Button>

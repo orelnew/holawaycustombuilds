@@ -27,21 +27,21 @@ const NWAKitchenTrends = () => {
                   </span>
                 </div>
                 <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-                  Kitchen Remodeling Trends in Northwest Arkansas
+                  Kitchen Remodeling Trends for 2026
                 </h1>
                 <p className="text-xl text-muted-foreground">
-                  What's hot in Bentonville, Rogers, Fayetteville, and Springdale kitchens in 2026
+                  What's hot in kitchen design in 2026
                 </p>
               </header>
 
               <div className="prose prose-lg max-w-none">
                 <p className="lead text-lg text-muted-foreground mb-6">
-                  Northwest Arkansas is experiencing a design renaissance, and kitchen remodeling trends reflect the region's unique blend of modern sophistication and Southern charm. Here's what's trending in NWA kitchens this year.
+                  Modern kitchen design is experiencing a renaissance, blending contemporary sophistication with timeless charm. Here's what's trending in kitchens this year.
                 </p>
 
                 <h2 className="text-2xl font-bold mt-8 mb-4">1. Two-Tone Cabinets</h2>
                 <p className="text-muted-foreground mb-4">
-                  The hottest trend in Bentonville and Rogers is two-tone cabinetry:
+                  The hottest trend in kitchen design is two-tone cabinetry:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-6">
                   <li>White or cream upper cabinets with navy or forest green lowers</li>
@@ -52,18 +52,18 @@ const NWAKitchenTrends = () => {
 
                 <h2 className="text-2xl font-bold mt-8 mb-4">2. Quartz Countertops</h2>
                 <p className="text-muted-foreground mb-4">
-                  Quartz has overtaken granite as the top choice in NWA:
+                  Quartz has overtaken granite as the top choice:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-6">
                   <li>Low maintenance ideal for busy families</li>
-                  <li>Resistant to staining from Arkansas humidity</li>
+                  <li>Resistant to staining from humidity</li>
                   <li>Wide variety of colors and patterns</li>
                   <li>Waterfall edges on islands are especially popular</li>
                 </ul>
 
                 <h2 className="text-2xl font-bold mt-8 mb-4">3. Open Shelving</h2>
                 <p className="text-muted-foreground mb-4">
-                  Fayetteville and Springdale homeowners are embracing open shelving:
+                  Homeowners everywhere are embracing open shelving:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-6">
                   <li>Natural wood or metal floating shelves</li>
@@ -74,7 +74,7 @@ const NWAKitchenTrends = () => {
 
                 <h2 className="text-2xl font-bold mt-8 mb-4">4. Smart Kitchen Technology</h2>
                 <p className="text-muted-foreground mb-4">
-                  Tech-forward NWA residents want connected kitchens:
+                  Tech-forward homeowners want connected kitchens:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-6">
                   <li>Smart refrigerators with touchscreens</li>
@@ -85,7 +85,7 @@ const NWAKitchenTrends = () => {
 
                 <h2 className="text-2xl font-bold mt-8 mb-4">5. Natural Materials</h2>
                 <p className="text-muted-foreground mb-4">
-                  Connecting to Arkansas's natural beauty through materials:
+                  Connecting to natural beauty through materials:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-6">
                   <li>Butcher block countertops for islands</li>
@@ -94,7 +94,7 @@ const NWAKitchenTrends = () => {
                   <li>Live-edge wood details</li>
                 </ul>
 
-                <h2 className="text-2xl font-bold mt-8 mb-4">Budget Ranges in NWA</h2>
+                <h2 className="text-2xl font-bold mt-8 mb-4">Budget Ranges</h2>
                 <div className="bg-muted/50 p-6 rounded-lg mb-6">
                   <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                     <li><strong>Minor Remodel:</strong> $15,000-$30,000 (paint, hardware, countertops)</li>
@@ -104,13 +104,13 @@ const NWAKitchenTrends = () => {
                 </div>
 
                 <p className="text-muted-foreground">
-                  Ready to remodel your Northwest Arkansas kitchen? HomeProConnect can connect you with experienced local contractors who understand regional trends and building codes.
+                  Ready to remodel your kitchen? HomeProConnect can connect you with experienced local contractors who understand regional trends and building codes.
                 </p>
               </div>
 
               <div className="mt-12 p-8 bg-navy text-cream rounded-lg text-center">
                 <h3 className="text-2xl font-bold mb-4">Plan Your Kitchen Remodel</h3>
-                <p className="mb-6">Connect with trusted NWA contractors today</p>
+                <p className="mb-6">Connect with trusted contractors today</p>
                 <Link to="/sms-opt-in">
                   <Button size="lg" className="bg-primary hover:bg-primary/90">
                     Get Started

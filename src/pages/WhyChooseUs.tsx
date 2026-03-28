@@ -48,7 +48,7 @@ const WhyChooseUs = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-                Why Choose HomeProConnect Arkansas?
+                Why Choose HomeProConnect?
               </h1>
               <p className="text-xl text-muted-foreground">
                 The smarter way to find qualified contractors for your Arkansas home improvement project

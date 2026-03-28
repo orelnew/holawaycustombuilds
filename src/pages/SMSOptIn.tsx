@@ -182,7 +182,7 @@ const SMSOptIn = () => {
                             htmlFor="transactionalConsent"
                             className="text-sm leading-relaxed cursor-pointer"
                           >
-                            I consent to receive transactional messages from <strong>HomeProConnect Arkansas</strong> at the phone number provided. This includes appointment reminders and meeting updates. Message frequency may vary (typically 2-5 messages per month). Message & data rates may apply. Reply HELP for help or STOP to opt out.
+                            I consent to receive transactional messages from <strong>HomeProConnect (DBA Windflow Media LLC)</strong> at the phone number provided. This includes appointment reminders and meeting updates. Message frequency may vary (typically 2-5 messages per month). Message & data rates may apply. Reply HELP for help or STOP to opt out.
                           </label>
                         </div>
                       </div>
@@ -198,7 +198,7 @@ const SMSOptIn = () => {
                             htmlFor="marketingConsent"
                             className="text-sm leading-relaxed cursor-pointer"
                           >
-                            I consent to receive marketing and promotional messages from <strong>HomeProConnect Arkansas</strong> at the phone number provided. This includes case studies and business tips. Message frequency may vary (typically 2-5 messages per month). Message & data rates may apply. Reply HELP for help or STOP to opt out.
+                            I consent to receive marketing and promotional messages from <strong>HomeProConnect (DBA Windflow Media LLC)</strong> at the phone number provided. This includes case studies and business tips. Message frequency may vary (typically 2-5 messages per month). Message & data rates may apply. Reply HELP for help or STOP to opt out.
                           </label>
                         </div>
                       </div>

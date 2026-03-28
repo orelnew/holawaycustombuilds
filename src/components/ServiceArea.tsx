@@ -2,9 +2,10 @@ import { MapPin } from "lucide-react";
 
 const ServiceArea = () => {
   const cities = [
-    "Little Rock", "North Little Rock", "Fayetteville", "Springdale", "Rogers",
-    "Bentonville", "Fort Smith", "Jonesboro", "Conway", "Hot Springs",
-    "Bella Vista", "Texarkana", "Sherwood", "Bryant", "Benton"
+    "New York City", "Los Angeles", "Chicago", "Houston", "Phoenix",
+    "Philadelphia", "San Antonio", "San Diego", "Dallas", "Austin",
+    "Jacksonville", "Fort Worth", "Columbus", "Charlotte", "San Francisco",
+    "Indianapolis", "Seattle", "Denver", "Boston", "Nashville"
   ];
 
   return (
@@ -17,12 +18,12 @@ const ServiceArea = () => {
           </div>
           
           <p className="text-xl mb-8 text-cream/90">
-            Proudly serving Arkansas communities statewide
+            Proudly serving communities nationwide
           </p>
 
           <div className="bg-background/10 backdrop-blur-sm rounded-lg p-8 border border-primary/20">
             <p className="text-lg mb-6 text-cream/90">
-              Connecting homeowners across the Natural State with trusted, pre-screened local contractors for all your home improvement needs.
+              Connecting homeowners across the United States with trusted, pre-screened local contractors for all your home improvement needs.
             </p>
             
             <div className="flex flex-wrap justify-center gap-3">

@@ -22,11 +22,11 @@ const ArkansasHistoricHomes = () => {
                   <span>•</span>
                   <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium">Restoration</span>
                 </div>
-                <h1 className="text-4xl md:text-5xl font-bold mb-4">Historic Home Remodeling in Arkansas</h1>
+                <h1 className="text-4xl md:text-5xl font-bold mb-4">Historic Home Remodeling</h1>
                 <p className="text-xl text-muted-foreground">Preserving character while modernizing comfort</p>
               </header>
               <div className="prose prose-lg max-w-none space-y-6 text-muted-foreground">
-                <p>Arkansas has beautiful historic homes from Victorian to Craftsman styles. Remodeling requires balancing preservation with modern needs.</p>
+                <p>Beautiful historic homes from Victorian to Craftsman styles are found across the country. Remodeling requires balancing preservation with modern needs.</p>
                 <h2 className="text-2xl font-bold text-foreground">Know the Rules</h2>
                 <p>Homes in historic districts have specific guidelines. Contact your local historic preservation commission before starting work.</p>
                 <h2 className="text-2xl font-bold text-foreground">Preserve Original Features</h2>

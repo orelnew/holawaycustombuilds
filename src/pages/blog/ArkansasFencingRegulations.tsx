@@ -22,17 +22,17 @@ const ArkansasFencingRegulations = () => {
                   <span>•</span>
                   <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium">Fencing</span>
                 </div>
-                <h1 className="text-4xl md:text-5xl font-bold mb-4">Fencing Regulations in Arkansas Cities</h1>
+                <h1 className="text-4xl md:text-5xl font-bold mb-4">Fencing Regulations in Your City</h1>
                 <p className="text-xl text-muted-foreground">Local ordinances and permit requirements you need to know</p>
               </header>
               <div className="prose prose-lg max-w-none space-y-6 text-muted-foreground">
-                <p>Before installing a fence in Arkansas, understanding local regulations can save time and money.</p>
+                <p>Before installing a fence, understanding local regulations can save time and money.</p>
                 <h2 className="text-2xl font-bold text-foreground">Height Restrictions</h2>
-                <p>Most Arkansas cities allow 6-foot fences in backyards and 4-foot fences in front yards. Check with your city before building.</p>
+                <p>Most cities allow 6-foot fences in backyards and 4-foot fences in front yards. Check with your local city before building.</p>
                 <h2 className="text-2xl font-bold text-foreground">Permit Requirements</h2>
-                <p>Cities like Little Rock, Fayetteville, and Fort Smith typically require permits for fence installation. Expect $50-$150 permit fees.</p>
+                <p>Many cities typically require permits for fence installation. Expect $50-$150 permit fees.</p>
                 <h2 className="text-2xl font-bold text-foreground">Property Line Considerations</h2>
-                <p>Always survey your property lines before installation. Arkansas law requires fences stay on your property unless neighbors agree otherwise.</p>
+                <p>Always survey your property lines before installation. Local laws require fences stay on your property unless neighbors agree otherwise.</p>
               </div>
             </div>
           </div>

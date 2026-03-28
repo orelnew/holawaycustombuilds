@@ -22,17 +22,17 @@ const ArkansasEnergyEfficiency = () => {
                   <span>•</span>
                   <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium">Energy</span>
                 </div>
-                <h1 className="text-4xl md:text-5xl font-bold mb-4">Energy-Efficient Home Improvements for Arkansas</h1>
+                <h1 className="text-4xl md:text-5xl font-bold mb-4">Energy-Efficient Home Improvements</h1>
                 <p className="text-xl text-muted-foreground">Cut costs and stay comfortable year-round</p>
               </header>
               <div className="prose prose-lg max-w-none space-y-6 text-muted-foreground">
-                <p>Arkansas's hot summers and cold winters mean energy efficiency pays off quickly. Here are top improvements.</p>
+                <p>Hot summers and cold winters mean energy efficiency pays off quickly. Here are top improvements.</p>
                 <h2 className="text-2xl font-bold text-foreground">Insulation Upgrades</h2>
-                <p>Adding attic insulation to R-38 or higher can cut cooling costs by 15-20% in Arkansas summers.</p>
+                <p>Adding attic insulation to R-38 or higher can cut cooling costs by 15-20% during hot summer months.</p>
                 <h2 className="text-2xl font-bold text-foreground">Window Replacement</h2>
                 <p>Energy Star windows reduce heat gain and loss. Expect 10-15 year payback through utility savings.</p>
                 <h2 className="text-2xl font-bold text-foreground">HVAC Optimization</h2>
-                <p>High-efficiency heat pumps work well in Arkansas climate, providing both heating and cooling efficiently.</p>
+                <p>High-efficiency heat pumps work well in most climates, providing both heating and cooling efficiently.</p>
               </div>
             </div>
           </div>

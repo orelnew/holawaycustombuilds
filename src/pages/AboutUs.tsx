@@ -15,8 +15,7 @@ const AboutUs = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-                About HomeProConnect Arkansas
-              </h1>
+                About HomeProConnect               </h1>
               <p className="text-xl text-muted-foreground">
                 Connecting Arkansas homeowners with trusted local contractors since day one
               </p>

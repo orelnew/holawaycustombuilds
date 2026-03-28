@@ -45,7 +45,7 @@ const HowItWorks = () => {
                 How It Works
               </h1>
               <p className="text-xl text-muted-foreground">
-                Finding the right contractor for your Arkansas home is simple with HomeProConnect
+                Finding the right contractor for your home is simple with HomeProConnect
               </p>
             </div>
           </div>
@@ -91,14 +91,14 @@ const HowItWorks = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                Why HomeProConnect Arkansas?
+                Why HomeProConnect ?
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <Card>
                   <CardContent className="p-6">
                     <h3 className="text-xl font-semibold mb-2">Local Focus</h3>
                     <p className="text-muted-foreground">
-                      We work exclusively with Arkansas-based contractors who know local building codes, suppliers, and conditions.
+                      We work exclusively with -based contractors who know local building codes, suppliers, and conditions.
                     </p>
                   </CardContent>
                 </Card>
@@ -139,7 +139,7 @@ const HowItWorks = () => {
                 Ready to Get Started?
               </h2>
               <p className="text-xl mb-8 text-cream/90">
-                Let us connect you with the perfect contractor for your Arkansas home improvement project
+                Let us connect you with the perfect contractor for your  home improvement project
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/sms-opt-in">

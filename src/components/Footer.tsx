@@ -8,11 +8,11 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="mb-4">
-              <h3 className="font-bold text-2xl text-primary mb-2">HomeProConnect Arkansas</h3>
+              <h3 className="font-bold text-2xl text-primary mb-2">HomeProConnect</h3>
               <p className="text-sm text-background/70">A service of Windflow Media LLC</p>
             </div>
             <p className="text-background/80">
-              Connecting Arkansas homeowners with trusted local contractors for kitchen remodels, bathroom renovations, and home improvement projects.
+              Connecting homeowners across the US with trusted local contractors for kitchen remodels, bathroom renovations, and home improvement projects.
             </p>
           </div>
 
@@ -52,7 +52,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-background/20 pt-8 text-center text-background/60">
-          <p>&copy; {new Date().getFullYear()} HomeProConnect Arkansas. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} HomeProConnect. All rights reserved.</p>
           <div className="flex justify-center gap-4 mt-3 text-sm flex-wrap">
             <Link to="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
             <span>•</span>
@@ -60,7 +60,7 @@ const Footer = () => {
             <span>•</span>
             <Link to="/sms-opt-in" className="hover:text-primary transition-colors">SMS Opt-In</Link>
           </div>
-          <p className="mt-3 text-sm">Serving Little Rock, Fayetteville, Springdale, Rogers, and communities across Arkansas</p>
+          <p className="mt-3 text-sm">Serving communities across the United States</p>
           <p className="mt-2 text-xs">Operated by Windflow Media LLC | 30 N Gould St Ste N, Sheridan, WY 82801</p>
         </div>
       </div>

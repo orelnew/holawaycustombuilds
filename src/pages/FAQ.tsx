@@ -11,8 +11,8 @@ import { Link } from "react-router-dom";
 
 const faqs = [
   {
-    question: "What is HomeProConnect Arkansas?",
-    answer: "HomeProConnect Arkansas is an appointment coordination service that connects Arkansas homeowners with pre-screened local contractors for home improvement projects. We're not contractors ourselves—we help facilitate the connection between you and qualified professionals."
+    question: "What is HomeProConnect?",
+    answer: "HomeProConnect is an appointment coordination service that connects Arkansas homeowners with pre-screened local contractors for home improvement projects. We're not contractors ourselves—we help facilitate the connection between you and qualified professionals."
   },
   {
     question: "How does the service work?",
@@ -65,7 +65,7 @@ const FAQ = () => {
                 Frequently Asked Questions
               </h1>
               <p className="text-xl text-muted-foreground">
-                Everything you need to know about HomeProConnect Arkansas
+                Everything you need to know about HomeProConnect
               </p>
             </div>
           </div>

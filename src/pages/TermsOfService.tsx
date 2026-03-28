@@ -11,7 +11,7 @@ const TermsOfService = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Terms of Service</h1>
-              <p className="text-lg text-muted-foreground mb-2">HomeProConnect Arkansas</p>
+              <p className="text-lg text-muted-foreground mb-2">HomeProConnect</p>
               <p className="text-sm text-muted-foreground">A service of Windflow Media LLC</p>
               <div className="mt-4 space-y-1 text-sm text-muted-foreground">
                 <p><strong>Effective Date:</strong> March 2026</p>
@@ -29,16 +29,16 @@ const TermsOfService = () => {
                 <div>
                   <h2 className="text-2xl font-bold text-foreground mb-3">1. Agreement to Terms</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    By using HomeProConnect Arkansas ("HomeProConnect," "we," "us") — including submitting an inquiry, visiting our website, or receiving SMS communications — you agree to these Terms of Service.
+                    By using HomeProConnect ("HomeProConnect," "we," "us") — including submitting an inquiry, visiting our website, or receiving SMS communications — you agree to these Terms of Service.
                   </p>
                   <p className="text-muted-foreground leading-relaxed mt-3">
-                    HomeProConnect Arkansas is operated by Windflow Media LLC.
+                    HomeProConnect is operated by Windflow Media LLC.
                   </p>
                 </div>
 
                 <div>
                   <h2 className="text-2xl font-bold text-foreground mb-3">2. Eligibility</h2>
-                  <p className="text-muted-foreground leading-relaxed mb-2">To use HomeProConnect Arkansas services:</p>
+                  <p className="text-muted-foreground leading-relaxed mb-2">To use HomeProConnect services:</p>
                   <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                     <li><strong>You must be at least 18 years of age.</strong> By submitting an inquiry or opting in to SMS communications, you confirm you are 18 years or older.</li>
                     <li>You must be a homeowner or authorized representative for the property in question.</li>
@@ -48,7 +48,7 @@ const TermsOfService = () => {
 
                 <div>
                   <h2 className="text-2xl font-bold text-foreground mb-3">3. Description of Services</h2>
-                  <p className="text-muted-foreground leading-relaxed mb-2">HomeProConnect Arkansas is an appointment coordination service that:</p>
+                  <p className="text-muted-foreground leading-relaxed mb-2">HomeProConnect is an appointment coordination service that:</p>
                   <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                     <li>Receives home improvement inquiries from homeowners</li>
                     <li>Matches inquiries with qualified local contractors</li>
@@ -65,7 +65,7 @@ const TermsOfService = () => {
 
                   <h3 className="text-xl font-semibold text-foreground mt-4 mb-2">Program Description</h3>
                   <p className="text-muted-foreground leading-relaxed mb-2">
-                    HomeProConnect Arkansas uses SMS messaging to coordinate appointments between homeowners and contractors. Messages include:
+                    HomeProConnect uses SMS messaging to coordinate appointments between homeowners and contractors. Messages include:
                   </p>
                   <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                     <li>Scheduling requests and confirmations</li>
@@ -76,7 +76,7 @@ const TermsOfService = () => {
 
                   <h3 className="text-xl font-semibold text-foreground mt-4 mb-2">On Behalf Of</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Messages are sent by HomeProConnect Arkansas on behalf of our partner contractors. Each message identifies the relevant contractor.
+                    Messages are sent by HomeProConnect on behalf of our partner contractors. Each message identifies the relevant contractor.
                   </p>
 
                   <h3 className="text-xl font-semibold text-foreground mt-4 mb-2">Message Frequency</h3>
@@ -105,14 +105,14 @@ const TermsOfService = () => {
 
                   <h3 className="text-xl font-semibold text-foreground mt-4 mb-2">Carrier Liability Disclaimer</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    HomeProConnect Arkansas and mobile carriers are not liable for delayed or undelivered messages. Message delivery depends on your carrier's network and is outside our control.
+                    HomeProConnect and mobile carriers are not liable for delayed or undelivered messages. Message delivery depends on your carrier's network and is outside our control.
                   </p>
                 </div>
 
                 <div>
                   <h2 className="text-2xl font-bold text-foreground mb-3">5. Contractor Relationships</h2>
                   <p className="text-muted-foreground leading-relaxed mb-2">
-                    HomeProConnect Arkansas partners with independent contractors. We do not:
+                    HomeProConnect partners with independent contractors. We do not:
                   </p>
                   <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                     <li>Employ the contractors</li>
@@ -145,7 +145,7 @@ const TermsOfService = () => {
                     <li>That you will be satisfied with any contractor's work</li>
                   </ul>
                   <p className="text-muted-foreground leading-relaxed mt-3">
-                    HomeProConnect Arkansas is a coordination service only.
+                    HomeProConnect is a coordination service only.
                   </p>
                 </div>
 
@@ -159,7 +159,7 @@ const TermsOfService = () => {
                 <div>
                   <h2 className="text-2xl font-bold text-foreground mb-3">9. Limitation of Liability</h2>
                   <p className="text-muted-foreground leading-relaxed mb-2">
-                    To the fullest extent permitted by law, HomeProConnect Arkansas and Windflow Media LLC are not liable for:
+                    To the fullest extent permitted by law, HomeProConnect and Windflow Media LLC are not liable for:
                   </p>
                   <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                     <li>Any damages arising from contractor work or conduct</li>
@@ -220,7 +220,7 @@ const TermsOfService = () => {
                 <div>
                   <h2 className="text-2xl font-bold text-foreground mb-3">17. Contact Us</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    <strong>HomeProConnect Arkansas</strong><br />
+                    <strong>HomeProConnect</strong><br />
                     Operated by Windflow Media LLC<br />
                     30 N Gould St Ste N<br />
                     Sheridan, WY 82801<br />
