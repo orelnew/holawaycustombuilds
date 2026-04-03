@@ -166,12 +166,9 @@ const SMSOptIn = () => {
                     <div className="bg-muted/50 rounded-lg p-6 space-y-4">
                       <div>
                         <h3 className="font-semibold text-lg mb-2">SMS Consent (Optional)</h3>
-                        <p className="text-sm text-muted-foreground">
-                          The following SMS disclosures clearly state who is sending messages, what type of messages will be sent, message frequency, rates, and how to get help or opt out.
-                        </p>
                       </div>
 
-                      {/* Transactional Messages Checkbox */}
+                      {/* Non-Marketing Messages Checkbox */}
                       <div className="flex items-start space-x-3 bg-background rounded-lg p-4">
                         <Controller
                           name="transactionalConsent"
@@ -189,7 +186,7 @@ const SMSOptIn = () => {
                             htmlFor="transactionalConsent"
                             className="text-sm leading-relaxed cursor-pointer"
                           >
-                            I consent to receive transactional messages from <strong>Windflow Media LLC (DBA HomeProConnect)</strong> at the phone number provided. This includes appointment reminders and meeting updates. Message frequency may vary (typically 2-5 messages per month). Message & data rates may apply. Reply HELP for help or STOP to opt out.
+                            I consent to receive non-marketing text messages from <strong>Windflow Media LLC DBA HomeProConnect</strong> about project inquiries, appointment scheduling, confirmations, and reminders. Message frequency may vary, message & data rates may apply. Text HELP for assistance, reply STOP to opt out.
                           </label>
                         </div>
                       </div>
@@ -212,7 +209,7 @@ const SMSOptIn = () => {
                             htmlFor="marketingConsent"
                             className="text-sm leading-relaxed cursor-pointer"
                           >
-                            I consent to receive marketing and promotional messages from <strong>Windflow Media LLC (DBA HomeProConnect)</strong> at the phone number provided. This includes case studies and business tips. Message frequency may vary (typically 2-5 messages per month). Message & data rates may apply. Reply HELP for help or STOP to opt out.
+                            I consent to receive marketing text messages, about special offers, discounts, and service updates, from <strong>Windflow Media LLC DBA HomeProConnect</strong> at the phone number provided. Message frequency may vary. Message & data rates may apply. Text HELP for assistance, reply STOP to opt out.
                           </label>
                         </div>
                       </div>
@@ -224,22 +221,18 @@ const SMSOptIn = () => {
                       size="lg"
                       className="w-full text-lg"
                     >
-                      Get My Free Consultation
+                      Submit
                     </Button>
 
-                    {/* Privacy & Data Sharing Notice */}
-                    <div className="bg-muted/30 rounded-lg p-4">
-                      <p className="text-sm text-muted-foreground">
-                        <strong>Privacy & Data Sharing:</strong> Your SMS consent and phone number will <strong>not be shared with third parties</strong> except our SMS service providers who are required to deliver text messages. For full details, please review our{" "}
-                        <Link to="/privacy-policy" className="text-primary hover:underline">
-                          Privacy Policy
-                        </Link>{" "}
-                        and{" "}
-                        <Link to="/terms-of-service" className="text-primary hover:underline">
-                          Terms of Service
-                        </Link>
-                        , which are publicly accessible.
-                      </p>
+                    {/* Privacy & Terms Links */}
+                    <div className="text-center text-sm text-muted-foreground">
+                      <Link to="/privacy-policy" className="text-blue-600 hover:underline">
+                        Privacy Policy
+                      </Link>
+                      {" | "}
+                      <Link to="/terms-of-service" className="text-blue-600 hover:underline">
+                        Terms of Service
+                      </Link>
                     </div>
 
                     {/* Trust Badges */}

@@ -163,7 +163,7 @@ const AboutUs = () => {
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl font-bold mb-6">A Service of Windflow Media LLC</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                HomeProConnect  is operated by Windflow Media LLC, a marketing and appointment coordination company based in the United States.
+                HomeProConnect is operated by Windflow Media LLC, a marketing and appointment coordination company based in the United States.
               </p>
               <Card className="max-w-md mx-auto">
                 <CardContent className="p-6">
