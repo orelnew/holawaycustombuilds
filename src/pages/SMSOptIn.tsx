@@ -20,7 +20,6 @@ const formSchema = z.object({
   }),
   email: z.string().email("Invalid email address"),
   transactionalConsent: z.boolean().optional(),
-  marketingConsent: z.boolean().optional(),
 });
 
 type FormData = z.infer<typeof formSchema>;
@@ -187,29 +186,6 @@ const SMSOptIn = () => {
                             className="text-sm leading-relaxed cursor-pointer"
                           >
                             I consent to receive non-marketing text messages from <strong>Windflow Media LLC DBA HomeProConnect</strong> about project inquiries, appointment scheduling, confirmations, and reminders. Message frequency may vary, message & data rates may apply. Text HELP for assistance, reply STOP to opt out.
-                          </label>
-                        </div>
-                      </div>
-
-                      {/* Marketing Messages Checkbox */}
-                      <div className="flex items-start space-x-3 bg-background rounded-lg p-4">
-                        <Controller
-                          name="marketingConsent"
-                          control={control}
-                          render={({ field }) => (
-                            <Checkbox
-                              id="marketingConsent"
-                              checked={field.value}
-                              onCheckedChange={field.onChange}
-                            />
-                          )}
-                        />
-                        <div className="grid gap-1.5 leading-none">
-                          <label
-                            htmlFor="marketingConsent"
-                            className="text-sm leading-relaxed cursor-pointer"
-                          >
-                            I consent to receive marketing text messages, about special offers, discounts, and service updates, from <strong>Windflow Media LLC DBA HomeProConnect</strong> at the phone number provided. Message frequency may vary. Message & data rates may apply. Text HELP for assistance, reply STOP to opt out.
                           </label>
                         </div>
                       </div>
