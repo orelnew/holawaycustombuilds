@@ -77,7 +77,7 @@ const PrivacyPolicy = () => {
                   <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                     <li>Providing and improving our services</li>
                     <li>Processing transactions and payments</li>
-                    <li>Communicating with you about your inquiries, appointments, and promotions</li>
+                    <li>Communicating with you about your inquiries and appointments</li>
                     <li>Enhancing website functionality and user experience</li>
                     <li>Ensuring security and fraud prevention</li>
                     <li>Maintaining records of your communication preferences and consent</li>
@@ -89,7 +89,7 @@ const PrivacyPolicy = () => {
 
                   <h3 className="text-xl font-semibold text-foreground mt-4 mb-2">Text Message Program Terms & Conditions</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    By opting into our SMS messaging services, you agree to receive text messages related to our services, including appointment reminders, customer support, and important updates.
+                    By opting into our SMS messaging services, you agree to receive non-marketing text messages related to our services, including project inquiries and appointment reminders.
                   </p>
 
                   <h3 className="text-xl font-semibold text-foreground mt-4 mb-2">Opt-In & Consent:</h3>
@@ -110,7 +110,7 @@ const PrivacyPolicy = () => {
                   <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                     <li>Message frequency varies based on your interactions with our business</li>
                     <li>Messages will be directly related to the services you have requested</li>
-                    <li>We do not send promotional content without specific consent</li>
+                    <li>We do not send promotional or marketing content</li>
                   </ul>
 
                   <h3 className="text-xl font-semibold text-foreground mt-4 mb-2">Help & Support:</h3>
@@ -205,7 +205,7 @@ const PrivacyPolicy = () => {
                   <p className="text-muted-foreground leading-relaxed mb-2">You have the right to:</p>
                   <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                     <li>Access, update, or delete your personal information</li>
-                    <li>Opt-out of marketing emails by clicking "unsubscribe" in our emails</li>
+                    <li>Opt-out of email communications by clicking "unsubscribe" in our emails</li>
                     <li>Opt-out of SMS messages by replying "STOP"</li>
                     <li>Request information on how we process your data</li>
                     <li>Withdraw consent at any time for future communications</li>
