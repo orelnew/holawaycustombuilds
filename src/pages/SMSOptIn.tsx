@@ -185,7 +185,7 @@ const SMSOptIn = () => {
                             htmlFor="transactionalConsent"
                             className="text-sm leading-relaxed cursor-pointer"
                           >
-                            I consent to receive non-marketing text messages from <strong>Windflow Media LLC DBA HomeProConnect</strong> about project inquiries, appointment scheduling, confirmations, and reminders. Message frequency may vary, message & data rates may apply. Text HELP for assistance, reply STOP to opt out.
+                            I consent to receive non-marketing text messages from <strong>Windflow Media LLC DBA HomeProConnect</strong> about project inquiries and appointment reminders. Message frequency may vary, message & data rates may apply. Text HELP for assistance, reply STOP to opt out.
                           </label>
                         </div>
                       </div>
